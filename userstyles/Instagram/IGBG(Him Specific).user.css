@@ -8,6 +8,7 @@
 
 @preprocessor stylus
 
+@var checkbox pinbanner "Hide Pin banner" 1
 @var checkbox bishakha "Bishakha" 1
 @var checkbox riya "Riya" 1
 @var checkbox rupa "rupa" 1
@@ -55,7 +56,12 @@
       }
     }
     *{border: 0px !important}
+    if pinbanner{
+        div[class*="x1kmbdvd"]:has([aria-label*="Pinned"]){
+            display: none;
+        }
     }
+}
 @-moz-document url-prefix("https://www.instagram.com/direct/t") {
 
     .universal{display: none}
