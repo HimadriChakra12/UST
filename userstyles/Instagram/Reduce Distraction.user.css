@@ -42,16 +42,8 @@
     }
     
     if chat{
-            div[data-pagelet="IGDInboxThreadListScrollableAreaPagelet"] > div[class="x1c4vz4f x2lah0s xhjk10j"]{
-                display: none;
-            }
-            div[class="x6s0dn4 x1bs97v6 x1q0q8m5 x9f619 xat24cr xh8yej3 x1qhh985 x14z7g9a xzbw6zd x78zum5 x1q0g3np x1qughib xsag5q8 x13jy36j x64bnmy xijc0j3"]{
-                display: none
-            }
-            
-        } else{
         if notes{
-            div[data-pagelet="IGDInboxThreadListScrollableAreaPagelet"] > div[class="x1c4vz4f x2lah0s xhjk10j"]{
+            div[data-pagelet="IGDInboxThreadListScrollableAreaPagelet"] > div[class="x1c4vz4f x2lah0s xhjk10j x6ikm8r x10wlt62 xf7dkkf xv54qhq"]{
                 display: none;
             }
         }
