@@ -31,44 +31,9 @@
 
   const REMOVE = [
 
-    /* AI */
-    '[data-attrid="SGEOverview"]',
-    '[data-async-type="sgegenerative"]',
-    '.M8OgIe',
-    '.dG2XIf',
-    'sfc-overview',
 
-    /* ads */
-    '[aria-label="Ads"]',
-    '[data-text-ad]',
-    '.commercial-unit-desktop-top',
-    '.commercial-unit-mobile-top',
-    '.commercial-unit-mobile-bottom',
-    '#tvcap',
-    '#bottomads',
 
-    /* people also ask */
-    '.related-question-pair',
-    '[jscontroller="ge3PVe"]',
 
-    /* shopping spam */
-    '.pla-unit-container',
-
-    /* giant product/video carousels */
-    'g-scrolling-carousel',
-
-    /* twitter/x embeds */
-    '.eejeod',
-
-    /* footer junk */
-    '#foot',
-    '#footcnt',
-    '#fbar',
-    '#mfooter',
-
-    /* sticky junk */
-    '.mMAuCf',
-    '.EyBRub',
   ];
 
   /* ════════════════════════════════════════
@@ -95,6 +60,18 @@
 
     ${REMOVE.join(',')} {
       display: none !important;
+    }
+    div[id="uOz6nd"],
+    div[id="aaLvqc"],
+    div[class="ULSxyf"]{
+    display:none;
+    }
+    div[class="YNk70c EjQTId"] > div[class="Kevs9 SLPe5b"]:has([jsmodel="Wn3aEc"]){
+      width: var(--debloat-width) !important;
+    }
+  div[class="YNk70c EjQTId"] > div[class="Kevs9 SLPe5b"]:not(:has([jsmodel="Wn3aEc"])){
+      width: calc(var(--debloat-width) - 50px) !important;
+      height: calc(120%) !important;  
     }
         @media screen and (min-width: 1600px) {
         #tsf,
