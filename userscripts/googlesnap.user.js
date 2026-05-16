@@ -17,7 +17,9 @@
   /* ════════════════════════════════════════
      SETTINGS
      ════════════════════════════════════════ */
-
+  const LOW_RAM_MODE = true;
+  const DISABLE_IMAGES_ON_SCROLL = true;
+  const DISABLE_MUTATION_OBSERVER = false; // keep ON for safety
   const ENABLE_COMPACT_MODE = true;
 
   /* ════════════════════════════════════════
@@ -31,7 +33,46 @@
 
   const REMOVE = [
 
+    'iframe[src*="youtube"]',
+    'iframe[src*="google.com/ads"]',
+    '[jscontroller*="M2ABbe"]',
+    '[jscontroller*="Vj6r2c"]',
+    '.m6B6Be', /* suggestions modules */
 
+    /* AI */
+    '[data-attrid="SGEOverview"]',
+    '[data-async-type="sgegenerative"]',
+
+    '.dG2XIf',
+    'sfc-overview',
+
+    /* ads */
+    '[aria-label="Ads"]',
+    '[data-text-ad]',
+    '.commercial-unit-desktop-top',
+    '.commercial-unit-mobile-top',
+    '.commercial-unit-mobile-bottom',
+    '#tvcap',
+    '#bottomads',
+
+    /* people also ask */
+    '.related-question-pair',
+    '[jscontroller="ge3PVe"]',
+
+    /* shopping spam */
+    '.pla-unit-container',
+
+    /* giant product/video carousels */
+    'g-scrolling-carousel',
+
+    /* twitter/x embeds */
+    '.eejeod',
+
+    /* footer junk */
+    '#foot',
+    '#footcnt',
+    '#fbar',
+    '#mfooter',
 
 
   ];
@@ -65,13 +106,6 @@
     div[id="aaLvqc"],
     div[class="ULSxyf"]{
     display:none;
-    }
-    div[class="YNk70c EjQTId"] > div[class="Kevs9 SLPe5b"]:has([jsmodel="Wn3aEc"]){
-      width: var(--debloat-width) !important;
-    }
-  div[class="YNk70c EjQTId"] > div[class="Kevs9 SLPe5b"]:not(:has([jsmodel="Wn3aEc"])){
-      width: calc(var(--debloat-width) - 50px) !important;
-      height: calc(120%) !important;  
     }
         @media screen and (min-width: 1600px) {
         #tsf,
@@ -220,13 +254,12 @@
     }
 
     /* NO ANIMATIONS */
-    *,
-    *::before,
-    *::after {
-      animation: none !important;
-      transition: none !important;
-      scroll-behavior: auto !important;
-    }
+*,
+*::before,
+*::after {
+
+
+}
 
     /* low repaint cost */
     body {
@@ -252,46 +285,70 @@
      low overhead
      ════════════════════════════════════════ */
 
-  function purge() {
+const PURGE_CACHE = new WeakSet();
 
-    for (const selector of REMOVE) {
-      document.querySelectorAll(selector).forEach(el => el.remove());
+function purge() {
+
+  const nodes = document.querySelectorAll(REMOVE.join(','));
+
+  for (let i = 0; i < nodes.length; i++) {
+    const el = nodes[i];
+    if (!PURGE_CACHE.has(el)) {
+      PURGE_CACHE.add(el);
+      el.remove();
     }
-
-    /* remove AI headings manually */
-    document.querySelectorAll('h1,h2,h3').forEach(el => {
-
-      const text = el.textContent;
-
-      if (
-        text.includes('AI Overview') ||
-        text.includes('People also ask')
-      ) {
-        el.closest('div[jscontroller], .g, section')?.remove();
-      }
-
-    });
-
   }
+
+}
 
   document.addEventListener('DOMContentLoaded', purge);
 
   let scheduled = false;
 
+ if (LOW_RAM_MODE) {
+
+  setInterval(() => {
+    purge();
+  }, 2000);
+
+} else {
+
   const observer = new MutationObserver(() => {
-
-    if (scheduled) return;
-
-    scheduled = true;
-
-    requestIdleCallback(() => {
-
-      purge();
-      scheduled = false;
-
-    }, { timeout: 1000 });
-
+    requestIdleCallback(purge, { timeout: 1000 });
   });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+
+}
+  function memoryHintCleanup() {
+
+  try {
+    if (window.gc) window.gc(); // only works in some browsers
+  } catch {}
+
+  // force drop unused layout references
+  document.querySelectorAll('iframe, video').forEach(el => {
+    el.loading = 'lazy';
+  });
+
+}
+  setInterval(memoryHintCleanup, 15000);
+
+  if (DISABLE_IMAGES_ON_SCROLL) {
+
+  document.addEventListener('scroll', () => {
+    document.querySelectorAll('img').forEach(img => {
+      if (!img.dataset.src) {
+        img.loading = 'lazy';
+        img.decoding = 'async';
+      }
+    });
+  }, { passive: true });
+
+}
 
   document.addEventListener('DOMContentLoaded', () => {
 
@@ -423,7 +480,8 @@
   });
 
   /* lighter idle callback */
-  window.requestIdleCallback = cb => setTimeout(cb, 200);
+window.requestIdleCallback = (cb) => setTimeout(cb, 500);
+
 
   /* compact mode */
   if (ENABLE_COMPACT_MODE) {
