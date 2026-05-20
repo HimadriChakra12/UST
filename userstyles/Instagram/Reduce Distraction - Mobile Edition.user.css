@@ -25,7 +25,7 @@
 
 @var checkbox sidebar               "⦿ Sidebar" 1
 @var checkbox search                "└⟶ Hide Search" 0
-@var checkbox explore               "└⟶ Hide Explore" 1
+@var checkbox explore               "└⟶ Hide Explore" 0
 @var checkbox reels                 "└⟶ Hide Reels" 1
 @var checkbox messages              "└⟶ Hide Messages" 0
 @var checkbox notifs                "└⟶ Hide Notifications" 0
