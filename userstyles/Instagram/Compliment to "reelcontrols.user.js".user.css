@@ -8,13 +8,13 @@
 
 @-moz-document regexp("^https?://(www\\.)?instagram\\.com/p/.*$"), regexp("https?:\\/\\/(www\\.)?instagram\\.com\\/[^\\/]+\\/reel\\/[A-Za-z0-9_-]+\\/?"), regexp("^https?://(www\\.)?instagram\\.com/") {
     /* Insert code here... */
-    article:has(span[class="_ap3a _aaco _aacw _aad4 _aad7 _aade"]) div[data-instancekey^="id-vpuid"] > div[aria-label="Video player"]
+    div[class="x1lliihq x5yr21d x1n2onr6 xh8yej3 x1ja2u2z"]:has(span[class="_ap3a _aaco _aacw _aad4 _aad7 _aade"]) div[data-instancekey^="id-vpuid"] > div[aria-label="Video player"]
     {
         width:  100px !important;
         height: 100px !important;
         transform: rotate(90deg)
     }
-    article:not(:has(span[class="_ap3a _aaco _aacw _aad4 _aad7 _aade"])) div[data-instancekey^="id-vpuid"] > div[aria-label="Video player"]
+    div[class="x1lliihq x5yr21d x1n2onr6 xh8yej3 x1ja2u2z"]:not(:has(span[class="_ap3a _aaco _aacw _aad4 _aad7 _aade"])) div[data-instancekey^="id-vpuid"] > div[aria-label="Video player"]
     {
         width:  50px !important;
         height: 50px !important;
