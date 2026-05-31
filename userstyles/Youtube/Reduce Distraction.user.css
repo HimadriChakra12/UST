@@ -2,7 +2,7 @@
 @name           Reduce Distractions [YouTube]
 @description    Strips away distracting elements on YouTube — sidebar, Shorts, recommendations, and more
 @namespace      https://userstyles.world/
-@version        1.1.0
+@version        1.1.1
 @author         KryoBit (fixed & extended)
 @license        MIT
 
@@ -83,6 +83,9 @@
             ytd-video-renderer[is-short],
             ytd-video-renderer:has(a[href*="/shorts/"]),
             ytd-reel-shelf-renderer {
+                display: none !important;
+            }
+            grid-shelf-view-model:has([class="yt-icon-shape ytSpecIconShapeHost"]){
                 display: none !important;
             }
         }
