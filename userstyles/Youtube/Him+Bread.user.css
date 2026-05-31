@@ -11,7 +11,16 @@
     /* cosmetic and focus tweaks for yt */
     /* credit to various userstyles makers for some pieces of this */
 
-
+    div[id="frosted-glass"]{
+        display: none
+    }
+    tp-yt-app-drawer[id="guide"]{
+        background: #111 !important;
+        margin-right: 10px;
+    }
+    ytd-mini-guide-renderer{
+        display: none
+    }
     /* hide recs */
     #secondary:has(ytd-playlist-panel-renderer:not([hidden])) #related {
         display: none !important;
@@ -112,74 +121,74 @@
     /* All of YouTube */
     /* #contents, .style-scope.ytd-notification-topbar-button-renderer.notification-button-style-type-default, .ytp-videowall-still.ytp-suggestion-set {
     display: none !important;
-    } */
-   /*Remove notification button*/
-   .style-scope.ytd-notification-topbar-button-renderer/*ytd-notification-topbar-button-renderer #button.ytd-notification-topbar-button-renderer */ {
-       display: none;
-   }
-   #thumbnail{
-       opacity: 0;
-       height: 20px;
-   }
-   ytd-rich-grid-media[class="style-scope ytd-rich-item-renderer"]:hover #thumbnail{
-       position: absolute;
-       height: 40rem !important;
-       width: 69rem !important;
-       z-index: 999;
-       opacity: 0;
-       left: -20%
-   }
-   #container:has(video[class="video-stream html5-main-video"]){
-       z-index: 999;
-   }
+} */
+    /*Remove notification button*/
+    .style-scope.ytd-notification-topbar-button-renderer/*ytd-notification-topbar-button-renderer #button.ytd-notification-topbar-button-renderer */ {
+        display: none;
+    }
+    #thumbnail{
+        opacity: 0;
+        height: 20px;
+    }
+    ytd-rich-grid-media[class="style-scope ytd-rich-item-renderer"]:hover #thumbnail{
+        position: absolute;
+        height: 40rem !important;
+        width: 69rem !important;
+        z-index: 999;
+        opacity: 0;
+        left: -20%
+    }
+    #container:has(video[class="video-stream html5-main-video"]){
+        z-index: 999;
+    }
 
-   /* per shits */
-   /*
-   ytd-rich-grid-media[class="style-scope ytd-rich-item-renderer"]:hover #thumbnail{
-   position: absolute;
-   height: 15rem !important;
-   width: 29rem !important;
-   z-index: 999;
-   opacity: 0
-   }
-   #container:has(video[class="video-stream html5-main-video"]){
-   z-index: 999;
-   }
-   
-   ytd-rich-grid-media[class="style-scope ytd-rich-item-renderer"]:hover div[id="byline-container"]{
-   opacity: 0
-   }
-   div[id="byline-container"]:hover{
-   opacity: 1
-   }
-   
+    /* per shits */
+    /*
+    ytd-rich-grid-media[class="style-scope ytd-rich-item-renderer"]:hover #thumbnail{
+    position: absolute;
+    height: 15rem !important;
+    width: 29rem !important;
+    z-index: 999;
+    opacity: 0
+}
+    #container:has(video[class="video-stream html5-main-video"]){
+    z-index: 999;
+}
+
+    ytd-rich-grid-media[class="style-scope ytd-rich-item-renderer"]:hover div[id="byline-container"]{
+    opacity: 0
+}
+    div[id="byline-container"]:hover{
+    opacity: 1
+}
+
     */
-   /* Metadata */ 
-   div[id="byline-container"]{
-       opacity: 0
-   }
-   div[id="metadata-line"]{
-       visibility: hidden
-   }
-   ytd-mini-guide-renderer[class="style-scope ytd-app"]{
-       display: none
-   }
-   #frosted-glass, #scroll-container{
-       display: none
-   }
-   #player-container.ytd-video-preview{
-       position: absolute;
-       width: 100%;
-       height: 100%
-   }
-   .html5-video-player .video-click-tracking, .html5-video-player .video-stream{
-       position: absolute;
-       /* height: 1060px !important;
-       width: 1060px !important; */
-   left: 50%;
-   top: 50%
-   
-       }
-   }
+    /* Metadata */ 
+    div[id="byline-container"]{
+        opacity: 0
+    }
+    div[id="metadata-line"]{
+        visibility: hidden
+    }
+    ytd-mini-guide-renderer[class="style-scope ytd-app"]{
+        display: none
+    }
+    #frosted-glass, #scroll-container{
+        display: none
+    }
+    #player-container.ytd-video-preview{
+        position: absolute;
+        width: 100%;
+        height: 100%
+    }
+    .html5-video-player .video-click-tracking, .html5-video-player .video-stream{
+        position: absolute;
+        /* height: 1060px !important;
+        width: 1060px !important; */
+        left: 50%;
+        top: 50%
+
+    }
+}
 
 
