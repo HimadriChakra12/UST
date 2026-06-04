@@ -4,7 +4,7 @@
 @description    Strips away distracting elements on Instagram
 @namespace      https://userstyles.world/user/Him
 @namespace      https://github.com/HimadriChakra12/My-Usershytts/edit/main/userstyles/Instagram/
-@version        1.3.8.1
+@version        1.3.8.3
 @author         Himadri
 @license        MIT
 
@@ -38,6 +38,8 @@
 @var checkbox fromMeta              "Hide Also from Meta" 0
 @var checkbox settings              "└⟶ Hide Settings" 0
 @var checkbox meta                  "└⟶ Hide Meta" 1
+@var checkbox devadds               "Developer Additions" 1
+@var checkbox images                "||>  Hide images" 0
 
 ==/UserStyle== */
 @-moz-document domain("www.instagram.com") {
@@ -232,6 +234,7 @@
             display: none;
         }
     }
+    
 }
 @-moz-document regexp("^https?://(www\\.)?instagram\\.com/.*$"){
     div[class="xw7yly9"]{
@@ -246,5 +249,13 @@
     }
     div[class="_acc8 _abpk"]{
         display: none
+    }
+}
+
+@-moz-document url-prefix("https://www.instagram.com/direct/t/17843088840319857/"), url-prefix("https://www.instagram.com/direct/t/17846226593822368/") {
+    if images{
+        div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x78zum5 x193iq5w"]:has(img){
+            display: none !important
+        }
     }
 }
