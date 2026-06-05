@@ -3,7 +3,7 @@
 // @namespace    https://github.com/debloat/google
 // @version      6.0.0
 // @description  Lightweight, theme-aware Google Search cleanup with canvas fingerprint poisoning, storage nuking, referrer stripping, telemetry blocking, and reduced bloat. AI Overview preserved.
-// @author       You
+// @author       HIM
 // @match        https://www.google.com/*
 // @match        https://google.com/*
 // @run-at       document-start
@@ -14,19 +14,9 @@
 (() => {
   'use strict';
 
-  /* ════════════════════════════════════════
-     SETTINGS
-     ════════════════════════════════════════ */
   const LOW_RAM_MODE          = true;
   const DISABLE_IMAGES_ON_SCROLL = true;
   const ENABLE_COMPACT_MODE   = true;
-
-  /* ════════════════════════════════════════
-     1. CANVAS FINGERPRINT POISONING
-     Adds imperceptible noise to every canvas
-     read so Google's fingerprinting gets
-     different garbage every session.
-     ════════════════════════════════════════ */
 
   const _toDataURL          = HTMLCanvasElement.prototype.toDataURL;
   const _toBlob             = HTMLCanvasElement.prototype.toBlob;
@@ -79,12 +69,6 @@
     };
   }
 
-  /* ════════════════════════════════════════
-     2. NAVIGATOR / SCREEN SPOOFING
-     Lies to JS APIs so fingerprinting
-     gets consistent but fake values.
-     ════════════════════════════════════════ */
-
   const spoof = (obj, prop, val) => {
     try {
       Object.defineProperty(obj, prop, {
@@ -130,13 +114,6 @@
   };
   Intl.DateTimeFormat.prototype = _DateTimeFormat.prototype;
 
-  /* ════════════════════════════════════════
-     3. COOKIE INTERCEPTOR
-     Blocks Google from writing persistent
-     tracking cookies. Session cookies still
-     work so search functions normally.
-     ════════════════════════════════════════ */
-
   const BLOCKED_COOKIE_NAMES = [
     'NID', 'CONSENT', 'SOCS', '1P_JAR',
     'AEC', 'ANID', 'DSID', 'IDE',
@@ -163,14 +140,6 @@
     });
   }
 
-  /* ════════════════════════════════════════
-     4. STORAGE NUKE
-     Wipes localStorage, sessionStorage,
-     and IndexedDB on every page load.
-     Google uses these for cross-session
-     tracking even without cookies.
-     ════════════════════════════════════════ */
-
   try { localStorage.clear(); }   catch {}
   try { sessionStorage.clear(); } catch {}
 
@@ -185,13 +154,6 @@
     caches.keys().then(keys => keys.forEach(k => caches.delete(k))).catch(() => {});
   }
 
-  /* ════════════════════════════════════════
-     5. REFERRER STRIPPING
-     Forces no referrer on all navigations
-     so Google can't track where you came
-     from or where you go.
-     ════════════════════════════════════════ */
-
   // Meta tag approach (works for page navigations)
   const metaRef = document.createElement('meta');
   metaRef.name    = 'referrer';
@@ -204,11 +166,6 @@
     if (a) a.referrerPolicy = 'no-referrer';
   }, true);
 
-  /* ════════════════════════════════════════
-     6. BLOCK TELEMETRY
-     Expanded — covers more endpoints than
-     v5.1. Beacon permanently killed.
-     ════════════════════════════════════════ */
 
   const BLOCKED_URLS = [
     'doubleclick',
@@ -253,10 +210,6 @@
   // Kill beacon entirely — no opt-out, it's pure telemetry
   navigator.sendBeacon = () => true;
 
-  /* ════════════════════════════════════════
-     7. REMOVE BLOAT (AI OVERVIEW KEPT)
-     ════════════════════════════════════════ */
-
   const REMOVE = [
     'iframe[src*="youtube"]',
     'iframe[src*="google.com/ads"]',
@@ -293,10 +246,6 @@
     '#mfooter',
   ];
 
-  /* ════════════════════════════════════════
-     8. CSS
-     ════════════════════════════════════════ */
-
   const style = document.createElement('style');
   style.textContent = `
     :root {
@@ -309,6 +258,32 @@
     }
 
     ${REMOVE.join(',')} { display: none !important; }
+
+    div[class="ULSxyf"]:has([jsname="xQjRM"]){
+        position: absolute;
+        width: 90%;
+        top: -35%;
+        left: -100%;
+        overflow-y: scroll;
+        z-index: 10000000000;
+        transition: 0.4s ease-in-out;
+    }
+
+    div[class="ULSxyf"]:has([jsname="xQjRM"]):hover{
+        background: #11111185;
+        backdrop-filter: blur(1000px);
+        padding: 20px;
+        z-index: 10000000000;
+        width: 305%;
+        transition: 0.4s ease-in-out;
+    }
+
+    div[class="ULSxyf"]:not(:has([jsname="xQjRM"])){
+        display: none;
+    }
+    div[jsslot=""]:has([data-attrid="DictionaryHeader"]){
+        display: none
+    }
 
     div[id="uOz6nd"],
     div[id="aaLvqc"]{ display: none; }
@@ -425,10 +400,6 @@
 
   document.documentElement.appendChild(style);
 
-  /* ════════════════════════════════════════
-     9. FAST PURGE
-     ════════════════════════════════════════ */
-
   const PURGE_CACHE = new WeakSet();
 
   function purge() {
@@ -455,14 +426,10 @@
     });
   }
 
-  /* ════════════════════════════════════════
-     10. URL TRACKING PARAM CLEANER
-     ════════════════════════════════════════ */
-
   const TRACKING_PARAMS = [
     'ved','ei','usg','source','sxsrf','oq',
     'aqs','gs_lcp','gs_lp','uact','sca_esv',
-    'sa','rlz','ie','oe',           // extra ones v5.1 missed
+    'sa','rlz','ie','oe',
   ];
 
   document.addEventListener('click', e => {
@@ -475,10 +442,6 @@
       a.referrerPolicy = 'no-referrer'; // belt-and-suspenders
     } catch {}
   }, true);
-
-  /* ════════════════════════════════════════
-     11. LOW RAM TWEAKS
-     ════════════════════════════════════════ */
 
   function memoryHint() {
     try { if (window.gc) window.gc(); } catch {}
