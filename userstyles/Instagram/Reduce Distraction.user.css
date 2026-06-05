@@ -13,7 +13,10 @@
 @var checkbox posts                 "⦿ Reels / Posts" 1
 @var checkbox comments              "└⟶ Hide comments" 0
 @var checkbox suggestPosts          "└⟶ Hide suggested posts from user" 1
-@var checkbox supportsection        "└⟶ Hide suggested posts from user" 1
+@var checkbox supportsection        "-> Hide support section" 0
+@var checkbox like                  "└⟶ Hide Like" 0
+@var checkbox comment               "└⟶ Hide comment" 0
+@var checkbox share                 "└⟶ Hide share" 0
 
 @var checkbox suggestFollow         "⦿ Remove Follow Suggestions" 1
 @var checkbox navbar                "Collapesed Sidebar" 1
@@ -103,12 +106,14 @@
         }
         else {
             if like{
-                div[class="x6s0dn4 x78zum5"] span[class="x1qfufaz"]:has([aria-label="Like"]){
+                div[class="x6s0dn4 x78zum5"] span[class="x1qfufaz"]:has([aria-label="Like"]),
+                div[class="x6s0dn4 x78zum5"] span:nth-child(2){
                     display: none;
                 }
             }
             if comment{
-                div[class="x6s0dn4 x78zum5"] span:has([aria-label="Like"]){
+                div[class="x6s0dn4 x78zum5"] span:has([aria-label="Comment"]),
+                div[class="x6s0dn4 x78zum5"] span:nth-child(4){
                     display: none;
                 }
             }
