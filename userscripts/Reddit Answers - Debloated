@@ -1,0 +1,155 @@
+// ==UserScript==
+// @name         Reddit Answers - Debloated
+// @namespace    local
+// @version      1.0
+// @description  Remove Reddit bloat, ads, tracking, login nags, and account traces
+// @match        https://www.reddit.com/answers/*
+// @run-at       document-start
+// @grant        none
+// ==/UserScript==
+
+(function () {
+    'use strict';
+
+    // --------------------------------------------------
+    // Block common telemetry requests
+    // --------------------------------------------------
+
+    const originalFetch = window.fetch;
+
+    window.fetch = function (...args) {
+        const url = String(args[0]);
+
+        const blocked = [
+            'gql.reddit.com',
+            'events.redditmedia.com',
+            'pixel.redditmedia.com',
+            'telemetry',
+            'tracking'
+        ];
+
+        if (blocked.some(x => url.includes(x))) {
+            return Promise.reject(new Error('Blocked'));
+        }
+
+        return originalFetch.apply(this, args);
+    };
+
+    const originalOpen = XMLHttpRequest.prototype.open;
+
+    XMLHttpRequest.prototype.open = function (method, url) {
+        const blocked = [
+            'events.redditmedia.com',
+            'pixel.redditmedia.com'
+        ];
+
+        if (blocked.some(x => String(url).includes(x))) {
+            return;
+        }
+
+        return originalOpen.apply(this, arguments);
+    };
+
+    // --------------------------------------------------
+    // Remove tracking parameters
+    // --------------------------------------------------
+
+    const cleanUrl = () => {
+        const u = new URL(location.href);
+
+        [
+            'utm_source',
+            'utm_medium',
+            'utm_campaign',
+            'utm_name',
+            'utm_term',
+            'utm_content',
+            'rdt',
+            'share_id'
+        ].forEach(x => u.searchParams.delete(x));
+
+        history.replaceState({}, '', u);
+    };
+
+    cleanUrl();
+
+    // --------------------------------------------------
+    // Wipe local traces
+    // --------------------------------------------------
+
+    try {
+        localStorage.clear();
+        sessionStorage.clear();
+    } catch {}
+
+    // --------------------------------------------------
+    // Remove clutter continuously
+    // --------------------------------------------------
+
+    const removeJunk = () => {
+
+        const selectors = [
+
+            // login/app nags
+            '[data-testid*="login"]',
+            '[id*="login"]',
+            '[class*="login"]',
+            '[class*="signup"]',
+
+            // promoted
+            '[data-promoted="true"]',
+            'shreddit-ad-post',
+
+            // app banners
+            '[class*="app"]',
+            '[id*="app"]',
+
+            // recommendations
+            '[aria-label*="Recommended"]',
+
+            // chat
+            '[href*="chat"]',
+
+            // avatars/profile widgets
+            '[data-testid="user-menu-button"]'
+        ];
+
+        selectors.forEach(sel => {
+            document.querySelectorAll(sel).forEach(el => {
+                el.remove();
+            });
+        });
+    };
+
+    new MutationObserver(removeJunk)
+        .observe(document.documentElement, {
+            childList: true,
+            subtree: true
+        });
+
+    // --------------------------------------------------
+    // Force compact CSS
+    // --------------------------------------------------
+
+    const style = document.createElement('style');
+
+    style.textContent = `
+        aside,
+        flex-left-nav-container[id="left-sidebar-container"],
+        div[class="flex flex-col gap-xs"],
+        nav,
+        footer,
+        shreddit-comments-page-ad,
+        shreddit-ad-post,
+        .promotedlink {
+            display:none !important;
+        }
+
+        body {
+            max-width:1200px !important;
+        }
+    `;
+
+    document.documentElement.appendChild(style);
+
+})();
