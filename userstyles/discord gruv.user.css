@@ -23,6 +23,9 @@
         background: var(--background);
         
     }
+    .chatGradient__36d07{
+        background: var(--background) !important;
+    }
     div[class="sidebar__5e434 theme-dark theme-darker images-dark"]:after, div[class="sidebar__5e434 theme-dark theme-darker images-dark"]:before, div[class="sidebarList__5e434 sidebarListRounded__5e434"]{
         background: var(--background);
     }
