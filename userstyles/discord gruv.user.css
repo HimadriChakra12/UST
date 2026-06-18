@@ -26,6 +26,9 @@
     div[class*="chatGradient"]{
         background: var(--background) !important;
     }
+        nav[aria-label="Private channels"], div[data-list-id*="private-channels"]{
+        background: var(--background) !important;
+    }
     div[class="sidebar__5e434 theme-dark theme-darker images-dark"]:after, div[class="sidebar__5e434 theme-dark theme-darker images-dark"]:before, div[class="sidebarList__5e434 sidebarListRounded__5e434"]{
         background: var(--background);
     }
