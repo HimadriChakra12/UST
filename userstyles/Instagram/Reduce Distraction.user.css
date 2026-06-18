@@ -39,6 +39,7 @@
 @var checkbox notifs                "└⟶ Hide Notifications" 0
 @var checkbox create                "└⟶ Hide Create" 1
 @var checkbox dashboard             "└⟶ Hide Dashboard" 1
+@var checkbox profile               "└⟶ Hide Profile" 0
 @var checkbox fromMeta              "Hide Also from Meta" 0
 @var checkbox settings              "└⟶ Hide Settings" 0
 @var checkbox meta                  "└⟶ Hide Meta" 1
@@ -190,7 +191,12 @@
             .xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x1hl2dhg.x16tdsg8.x1vvkbs.x4k7w5x.x1h91t0o.x1h9r5lt.x1jfb8zj.xv2umb2.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1qrby5j:has(.x1lliihq.x1n2onr6.x5n08af[aria-label="Professional dashboard"]) {
                 display: none;
             }
-    }
+        }
+        if profile{
+            div[class="x1n2onr6"]:has([aria-describedby="_r_1b9_"]){
+                display: none
+            }
+        }
 
         if fromMeta {
             div[class="xl5mz7h xhuyl8g"]:has(span.x1qrby5j.x7ja8zs.x1t2pt76.x1lytzrv.xedcshv.xarpa2k.x3igimt.x12ejxvf.xaigb6o.x1beo9mf.xv2umb2.x1jfb8zj.x1h9r5lt.x1h91t0o.x4k7w5x.x1vvkbs.x16tdsg8.x1hl2dhg.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-span:nth-of-type(2)) {
