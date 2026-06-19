@@ -6,6 +6,9 @@
 @author         Me
 ==/UserStyle== */
 
+div[id="google-one-tap-anchor"]{
+    display: none
+}
 @-moz-document url-prefix("https://app.shikho.com"), regexp("^https:\\/\\/app\\.shikho\\.com\\/student\\/my-courses\\/.*$") {
     /* Insert code here... */
     div[class="grid grid-cols-12 gap-4"]{
