@@ -134,5 +134,12 @@
     [aria-label='Recommended radio'] + * {
         display: none;
     }
+    
+    div[class="fNnrSm2k2IonbI9c contentSpacing"]{
+        position: absolute;
+        scale: 60%;
+        left: -15% !important;
+        top: 20% !important;
+    }
 }
 
