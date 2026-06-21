@@ -1,0 +1,46 @@
+/* ==UserStyle==
+@name           HIMADRI SPECIAL REDUCE DISTRACTIONS
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+
+@preprocessor stylus
+
+@var checkbox images                "||>  Hide images" 0
+@var checkbox specialtextunread     "||>  Special Text Unread" 1
+
+==/UserStyle== */
+
+@-moz-document domain("www.instagram.com") {
+    if specialtextunread{
+        div[class="html-div xdj266r x14z9mp xat24cr x1lziwak x1qjc9v5 x9f619 x78zum5 xdt5ytf x1iyjqo2 xl56j7k xeuugli x13jy36j x64bnmy x1y1aw1k xwib8y2"]:has(svg[aria-label="Pinned"]) span[class="x6s0dn4 x1iwo8zk x1033uif x179ill4 x1b60jn0 x9f619 x3nfvp2 xl56j7k x5slmwz xdk7pt x1xc55vz"]:after{
+            content: "<3" !important;
+            scale: 90% !important;
+            color: #f00;
+            font-family: bolder;
+        }
+        span[class="x6s0dn4 x1iwo8zk x1033uif x179ill4 x1b60jn0 x9f619 x3nfvp2 xl56j7k x5slmwz xdk7pt x1xc55vz"]:after{
+            content: "U";
+            scale: 80%;
+            color: #fff;
+            font-family: bold;
+        }
+        span[class="x6s0dn4 x1iwo8zk x1033uif x179ill4 x1b60jn0 x9f619 x3nfvp2 xl56j7k x5slmwz xdk7pt x1xc55vz"]{
+            Background: #0000;
+        }
+        div[class="x9f619 x1ja2u2z xzpqnlu x1hyvwdk x14bfe9o xjm9jq1 x6ikm8r x10wlt62 x10l6tqk x1i1rx1s"]{
+            display: none !important;
+        }
+    }
+}
+
+
+@-moz-document url-prefix("https://www.instagram.com/direct/t/17843088840319857/"),
+url-prefix("https://www.instagram.com/direct/t/17846226593822368/") {
+    if images{
+        div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x78zum5 x193iq5w"]:has(img){
+            display: none !important
+        }
+    }
+}
