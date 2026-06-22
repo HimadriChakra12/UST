@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name           ChatGPT Him Style
+@name           chatgpt.com
 @namespace      github.com/openstyles/stylus
 @version        1.0.0
 @description    A new userstyle
@@ -16,6 +16,9 @@
         width: 40px;
         color: #fff0
     }
+    div[class="-mt-4 text-token-text-tertiary relative w-full overflow-hidden text-center text-xs [view-transition-name:var(--vt-disclaimer)] md:px-[60px]"]{
+        background: #282828
+    }
     div[class*="@w-sm/main"]{
         background: #282828
     }
@@ -24,13 +27,18 @@
     }
     div[class="flex items-center gap-1 [grid-area:trailing]"]:has([aria-label="Start dictation"]),
     div[data-testid="composer-speech-button-container"],
-    div[class="relative basis-auto flex-col shrink flex flex-col justify-end max-sm:grow max-sm:justify-center sm:min-h-[calc(42svh-var(--header-height))]"],
     button[id="radix-_R_1kuvarlac579l35_"],
     body:has([class="btn relative group-focus-within/dialog:focus-visible:[outline-width:1.5px] group-focus-within/dialog:focus-visible:[outline-offset:2.5px] group-focus-within/dialog:focus-visible:[outline-style:solid] group-focus-within/dialog:focus-visible:[outline-color:var(--text-primary)] btn-secondary screen-arch:hidden md:screen-arch:flex max-xs:hidden"]) div[id="stage-slideover-sidebar"]{
         border: 0 !important;
         display: none
     }
     [class="mt-auto text-token-text-tertiary relative w-full overflow-hidden text-center text-xs [view-transition-name:var(--vt-disclaimer)] md:px-[60px]"]{
+        display: none
+    }
+    h1[class="text-heading-2 font-normal inline-flex items-baseline whitespace-pre-wrap min-h-10.5"]:after{
+        content: "Stawph Gooning, Start Writing!"
+    }
+    div[class="px-1 text-pretty whitespace-pre-wrap"]{
         display: none
     }
 }
