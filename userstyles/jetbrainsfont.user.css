@@ -35,5 +35,9 @@
         }
 }
 
-
+@-moz-document url-prefix(https://claude.ai){
+    span[data-cds="Icon"]{
+            font-family: var(--font-anthropicons, Anthropicons-Variable) !important;
+    }
+}
 
