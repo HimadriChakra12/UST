@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name           open.spotify.com
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("open.spotify.com") {
+    /* Insert code here... */
+    div[class="muznK3MRUjUec7Jo QRSUcqO8y8LUmz0F yiy_EezkGycfPvS3"]{
+        background: url();
+        background-size: 330%;
+        background-position: 50% 40%;
+    }
+    div[class="TevfkTnw3MGoxpI5 PrTyQSoWOM7EE0LI"]{
+        display: none
+    }
+}
