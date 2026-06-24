@@ -4,7 +4,7 @@
 @description    Strips away distracting elements on Instagram
 @namespace      https://userstyles.world/user/Him
 @namespace      https://github.com/HimadriChakra12/My-Usershytts/edit/main/userstyles/Instagram/
-@version        1.3.9
+@version        1.4.0
 @author         Himadri
 @license        MIT
 
@@ -26,6 +26,7 @@
 @var checkbox notes                 "└⟶ Remove Notes" 1
 @var checkbox chataccountNameplate  "└⟶ Remove Chat Account Nameplate" 1
 @var checkbox hidechatreels         "└⟶ Hide recieved reels" 0
+@var checkbox hidechatposts         "└⟶ Hide recieved posts" 0
 @var checkbox noshorts              "└⟶ Hide recieved shorts" 0
 @var checkbox tabs                  "└⟶ Hide Tabs(Primary, General, Requests)" 1
 @var checkbox searchbar             "└⟶ Hide Searchbar" 1
@@ -281,6 +282,11 @@
         div[role="none"]:has(svg[aria-label="Clip"]):not(div[role="group"]:has([aria-label^="Open the profile page"]))
         {
             display: none;
+        }
+    }
+    if hidechatposts{
+        div[role="none"]:has(a[class*="_a6hd"]){
+            display:none;
         }
     }
     if noshorts{
