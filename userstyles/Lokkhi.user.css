@@ -81,7 +81,7 @@ div[id="google-one-tap-anchor"]{
         max-height  : 30vh !important;
     }
 }
-@-moz-document url-prefix(https://open.spotify.com/playlist/2r5K3wB5WyDX74XkCrx2Vj) {
+@-moz-document url-prefix(https://open.spotify.com/playlist/07maNbdCVa7NT4XZeb1wYr) {
     
     div[class="LUXUp8VNfbIoaJCl"]{
         /*background-image: url(https://i.vgy.me/376vyZ.png);*/
@@ -95,11 +95,11 @@ div[id="google-one-tap-anchor"]{
     }
     div[class="VeKY4oPJjQ85fRnN"],
     div[class="Emh6sVCoQHM3KQ4_ WrEaGRqx9J44u32H"]{
-        background-image: url(https://i.vgy.me/SX2lLu.jpg) !important;
+        background-image: url(https://i.vgy.me/nsBhkC.jpg) !important;
         background-attachment: local;
-        background-size: 100%;
-        background-position-x: -50%;
-        background-position-y: 60%;
+        background-size: 350%;
+        background-position-x: 50%;
+        background-position-y: 50%;
         background-blend-mode: color;
         background-color: rgba(54, 57, 0, .6);
     }
