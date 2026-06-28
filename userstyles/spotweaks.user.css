@@ -127,7 +127,21 @@
         height: 450px;
         border: #1d2021 10px solid;
     }
-    div[class="LtqMCWXd5Nkemkym"]:focus-within,
-    div[class="LtqMCWXd5Nkemkym"]:hover{
+    div[class="clOQWHFqnYAn76bm"]{
+        background: #1d2021;
+    }
+    div[class="soVfmH1XK4QIons8"]{
+        background: #282828;
+    }
+    [class="qnaFIKUJ9oUIkN97 SC_eWQl28srvyLED"]{
+        display: none
+    }
+    [class="a_fKt7xvd8od_kEb"]{
+        border: #1d2021 10px solid;
+    }
+    .o9Qm0k0LWsFYMDR9,
+    .P4oGEJqsuuoGcFiA
+    {
+        color: wheat !important;
     }
 }
