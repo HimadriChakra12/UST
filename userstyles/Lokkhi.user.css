@@ -60,6 +60,40 @@ div[id="google-one-tap-anchor"]{
         --background-highlight: red;
         --background-press: blueviolet;
     }
+    .Ltz8hFoxXpck1XAk.WhDogzQwSAwEfE7F{
+         background: #8c0048;
+    }
+        .encore-dark-theme, .encore-dark-theme .encore-base-set {
+        --essential-bright-accent: #ff86a3;
+        --text-bright-accent: #fd7070;
+    }
+        .GzWlvg0xI8IJiSoY.u5wEtE_x69YxkLdv.TiaWL1ubrITBXdmD {
+        background: var(--essential-bright-accent);
+        .encore-internal-color-text-subdued, .encore-internal-color-text-base, .UudGCx16EmBkuFPllvss a, ._TH6YAXEzJtzSxhkGSqu a, .ET4SVjxyjH4WkA3kSo5G a, .qev2KFBSKCHkeXT4fDTl a, svg, .encore-text, .e-9541-text, .encore-text-body-small, .encore-text-body-small a {
+            color: var(--background-base);
+        }
+        .encore-internal-color-text-base {
+            font-weight: 800;
+        }
+        .DZJJ5SCypi2mREbjy5bx, .X_HqPouENflGygaUXNus, .xNcEHsjXQOxonFU8WdfF, .POVCTaiu08g8SWXr {
+            filter: brightness(0.15)
+        }
+        .ceOVVX, .e-91000-icon {
+            fill: var(--background-base);
+        }
+        .Ps9zgW56WZaBVLo1n3cg, .z2gDnpUep7JuZSzeIRag, .uWEu68slnCYemCug {
+            background: var(--background-base);
+            span {
+                color: var(--essential-bright-accent);
+            }
+        }
+        &:hover {
+            --essential-bright-accent: color-mix(in srgb, var(--text-bright-accent), white 10%);
+        }
+        &:active {
+            --essential-bright-accent: color-mix(in srgb, var(--text-bright-accent), white 20%);
+        }
+    }
 }
 
 @-moz-document url-prefix(https://open.spotify.com/playlist/07maNbdCVa7NT4XZeb1wYr) {
@@ -92,6 +126,40 @@ div[id="google-one-tap-anchor"]{
         --background-base: #c5364f;
         --background-highlight: red;
         --background-press: blueviolet;
+    }
+    .Ltz8hFoxXpck1XAk.WhDogzQwSAwEfE7F{
+         background: #8c0048;
+    }
+    .encore-dark-theme, .encore-dark-theme .encore-base-set {
+        --essential-bright-accent: #ff86a3;
+        --text-bright-accent: #fd7070;
+    }
+        .GzWlvg0xI8IJiSoY.u5wEtE_x69YxkLdv.TiaWL1ubrITBXdmD {
+        background: var(--essential-bright-accent);
+        .encore-internal-color-text-subdued, .encore-internal-color-text-base, .UudGCx16EmBkuFPllvss a, ._TH6YAXEzJtzSxhkGSqu a, .ET4SVjxyjH4WkA3kSo5G a, .qev2KFBSKCHkeXT4fDTl a, svg, .encore-text, .e-9541-text, .encore-text-body-small, .encore-text-body-small a {
+            color: var(--background-base);
+        }
+        .encore-internal-color-text-base {
+            font-weight: 800;
+        }
+        .DZJJ5SCypi2mREbjy5bx, .X_HqPouENflGygaUXNus, .xNcEHsjXQOxonFU8WdfF, .POVCTaiu08g8SWXr {
+            filter: brightness(0.15)
+        }
+        .ceOVVX, .e-91000-icon {
+            fill: var(--background-base);
+        }
+        .Ps9zgW56WZaBVLo1n3cg, .z2gDnpUep7JuZSzeIRag, .uWEu68slnCYemCug {
+            background: var(--background-base);
+            span {
+                color: var(--essential-bright-accent);
+            }
+        }
+        &:hover {
+            --essential-bright-accent: color-mix(in srgb, var(--text-bright-accent), white 10%);
+        }
+        &:active {
+            --essential-bright-accent: color-mix(in srgb, var(--text-bright-accent), white 20%);
+        }
     }
 }
 
