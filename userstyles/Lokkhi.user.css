@@ -55,6 +55,11 @@ div[id="google-one-tap-anchor"]{
         height      : 30vh !important;
         max-height  : 30vh !important;
     }
+    .encore-dark-theme .encore-bright-accent-set {
+        --background-base: #c5364f;
+        --background-highlight: red;
+        --background-press: blueviolet;
+    }
 }
 
 @-moz-document url-prefix(https://open.spotify.com/playlist/07maNbdCVa7NT4XZeb1wYr) {
@@ -83,32 +88,10 @@ div[id="google-one-tap-anchor"]{
         height      : 30vh !important;
         max-height  : 30vh !important;
     }
-}
-@-moz-document url-prefix(https://open.spotify.com/playlist/07maNbdCVa7NT4XZeb1wYr) {
-    
-    div[class="LUXUp8VNfbIoaJCl"]{
-        /*background-image: url(https://i.vgy.me/376vyZ.png);*/
-        background-attachment: local;
-        background-size: 340%;
-        background-blend-mode: color;
-        /* 1  background-color: #8c0048; */
-        /* 2  background-color: #ab274f; */
-         background-color: #8c0048;
-        background-position-x: center;
-    }
-    div[class="VeKY4oPJjQ85fRnN"],
-    div[class="Emh6sVCoQHM3KQ4_ WrEaGRqx9J44u32H"]{
-        background-image: url(https://i.vgy.me/nsBhkC.jpg) !important;
-        background-attachment: local;
-        background-size: 350%;
-        background-position-x: 50%;
-        background-position-y: 50%;
-        background-blend-mode: color;
-        background-color: rgba(54, 57, 0, .6);
-    }
-    div[class="XToncn4_mYHzhKy7 q8mQFn7r8UYsKdHE _H2ZzS_Atuwx6wh9 tMFkXbMSXNUegQIu EYdwwRebZIgjbKy_ aIU4qABgiIgjAEyD NEK7GtRu3w0JbyBT YDy_mwD8Z1sCem4Q zoKSw5SN9xUA4OkM C3zqtOMpn6kyeSzu"]{
-        height      : 30vh !important;
-        max-height  : 30vh !important;
+    .encore-dark-theme .encore-bright-accent-set {
+        --background-base: #c5364f;
+        --background-highlight: red;
+        --background-press: blueviolet;
     }
 }
 
