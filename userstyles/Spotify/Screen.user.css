@@ -158,10 +158,12 @@
     div[id="Desktop_LeftSidebar_Id"]
     {
         transition: .5s ease-in-out;
-        width: 0px;
+        width: 3px;
+        opacity: 0
     }
     div[id="Desktop_LeftSidebar_Id"]:hover
     {
         width: 400px;
+        opacity: 1
     }
 }
