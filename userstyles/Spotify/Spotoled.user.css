@@ -16,15 +16,10 @@
     }
     
     :root {
-        --orange: #d65d0e;
-        --orange-light: #fe8019;
-        --green: #8ec07c;
         --bg-primary: #000;
-        --bg-secondary: #000;
-        --bg-tertiary: #000;
-        --text: #fbf1c7;
+        --text: #fff;
         --text-muted: #222222;
-        --accent: var(--green);
+        --accent: #fff;
         --radius: 16px;
         --scrollbar-width: 5px;
         --scrollbar-opacity: .5;
@@ -45,7 +40,7 @@
     }
 
     .encore-dark-theme {
-        --background-base: var(--bg-tertiary);
+        --background-base: var(--bg-primary);
         --background-press: var(--bg-primary);
         --background-elevated-press: var(--bg-primary);
         --text-bright-accent: var(--accent);
@@ -95,7 +90,7 @@
     .wgtzoAN2iFV0pENAqJko.Y5DSUJKOG6sI99LanZGL,
     .f9pLH3HRZQxdDLzNqKjE,
     .POZtIm1wHFiwlxZY5i0a {
-        background: var(--bg-secondary) !important;
+        background: var(--bg-primary) !important;
     }
 
     .LzVINwqiLdMt_bgS5psf,
@@ -104,7 +99,7 @@
     .CoLO4pdSl8LGWyVZA00t,
     .qJOhHoRcFhHJpEQ2CwFT.koyeY6AgGRPmyPITi7yO,
     .jtqtOeRP46XAlHWx4C0D.MPBLLykSgRJIlLSbQVgy {
-        background: var(--bg-tertiary) !important;
+        background: var(--bg-primary) !important;
     }
 
     .HsbczDqu9qjcYr7EIdHR,
@@ -135,7 +130,7 @@
     }
 
     .tr8V5eHsUaIkOYVw7eSG {
-        --lyrics-color-background: var(--bg-tertiary);
+        --lyrics-color-background: var(--bg-primary);
         --lyrics-color-passed: var(--text);
         --lyrics-color-inactive: var(--text-muted);
     }
