@@ -8,6 +8,7 @@
 
 @-moz-document domain("chatgpt.com") {
     /* Insert code here... */
+    
     [class="mt-auto text-token-text-tertiary relative w-full overflow-hidden text-center text-xs [view-transition-name:var(--vt-disclaimer)] md:px-[60px]"],
     div[class="px-1 text-pretty whitespace-pre-wrap"],
     header > div:nth-child(2), 
@@ -23,6 +24,7 @@
         width: 40px;
         color: #fff0
     }
+    div[data-testid="thread-footer-overflow-spacer"],
     div[class*="relative"],
     div[class="-mt-4 text-token-text-tertiary relative w-full overflow-hidden text-center text-xs [view-transition-name:var(--vt-disclaimer)] md:px-[60px]"],
     header,
