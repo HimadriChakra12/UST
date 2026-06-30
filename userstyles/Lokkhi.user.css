@@ -172,11 +172,9 @@ div[id="google-one-tap-anchor"]{
     }
 }
 
-@-moz-document domain("discord.com") {
-    if discord{
-        div[class="pictureInPicture__6341f"]{
+@-moz-document regexp("^https:\\/\\/(?:www\\.)?discord\\.com(?:\\/.*)?$") {
+        [class="pictureInPicture__6341f"]{
             display: none
-        }
     }
 
 @-moz-document domain("onushilonedu.com") {
