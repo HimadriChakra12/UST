@@ -16,6 +16,7 @@
     
     *{border: 0 !important;}
 
+    div[class*="divider_"],
     div[class="children__9293f"]:after,
     div[class*="tile_d6271c noVerticalMargin_d6271c"]:has(img[class="art__4ad81"]),
     div[class="title_c38106"], .bar_c38106,
@@ -25,6 +26,7 @@
         display: none
     }
 
+    div[class*="container_"],
     [role="tree"],
     section[aria-labelledby="uid_20"],
     html,
