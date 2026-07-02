@@ -25,6 +25,8 @@
         display: none
     }
 
+    [role="tree"],
+    section[aria-labelledby="uid_20"],
     html,
     body,
     .container__2637a,
