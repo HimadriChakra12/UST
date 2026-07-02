@@ -26,9 +26,9 @@
         display: none
     }
 
-    div[class*="container_"],
+    div[class*="container__"],
     [role="tree"],
-    section[aria-labelledby="uid_20"],
+    section[aria-labelledby*="uid_"],
     html,
     body,
     .container__2637a,
