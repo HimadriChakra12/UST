@@ -167,6 +167,17 @@
         background-attachment: fixed !important;
         background-size: cover !important;
     }
+    :root{
+        --chatbg:           #0000;
+        --flavour:          #fff;
+        --friendtxtbg:      #fff;
+        --authertxtbg:      #262626;
+        --text:             #000; 
+        --autext:           #fff;  
+        --ptext:            #fff;
+        --send:             #fff;
+        --filter:           invert(00%);
+    }
     
     /* nickname placement fixing*/
     span[class="x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft"]:has(span[title]):after{ margin-bottom: 20px !important; }
@@ -353,8 +364,7 @@
             &[aria-label*="See"],
             &[aria-label="Voice Clip"],
             &[aria-label="Add Photo or Video"],
-            &[aria-label="Choose a GIF or sticker"], 
-            &[aria-label="Audio call"],
+            &[aria-label="Choose a GIF or sticker"], svg[aria-label="Audio call"],
             &[aria-label="Video call"],
             &[aria-label="Conversation information"],
             &[aria-label="Cancel reply"]
