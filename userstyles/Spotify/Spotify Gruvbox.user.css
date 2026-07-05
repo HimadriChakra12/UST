@@ -58,10 +58,10 @@
     .s1ft0kHOwOh71ov_.aJd_JJ8ANaE5yQK6.f2AfA4jDLWwihiQO.lCbuKQ_HfL4yze5_ { scale: var(--player-scale); }
 
     .fNnrSm2k2IonbI9c.contentSpacing {
-        position: absolute;
+        position: relative;
         scale: var(--home-scale);
-        left: -15%;
-        top: 20%;
+        left: -20%;
+        top: 5%;
     }
 
     .fLfpvVIyW2MfNDjv.bM6iPT1nVYIQQgkn,
