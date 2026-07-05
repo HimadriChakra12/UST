@@ -119,88 +119,40 @@
             display: none
         }
     }
-    .universal{display: none}
-
-    div[data-pagelet="IGDComposerForCannes"], 
-    div[class*="xw8ag78"],  div[class*="xw8ag78"] > div[class*="html-div"],
-    div[data-pagelet="IGDInboxHeaderOffMsys"],
-    div[data-pagelet="IGDComposerForCannes"] > div > div > div > div[class*="html-div"],
-    div[data-pagelet="IGDComposerForCannes"] > div > div > div > div > div > div > div > div[class*="html-div"],
-    div[class*="html-div"]:has([aria-label="Pinned message icon"]),
-    div[class="x78zum5 x1cqoux5 xdt5ytf"]{
-        background: #0000 !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        background-attachment: fixed !important;
-        background-size: cover !important;
-    }
     
+    :root{ --chatbg:       #0000; }
+        
+    div[class*="xw8ag78"],  div[class*="xw8ag78"] > div[class*="html-div"], div[data-pagelet="IGDComposerForCannes"] > div > div > div > div[class*="html-div"], div[data-pagelet="IGDComposerForCannes"] > div > div > div > div > div > div > div > div[class*="html-div"]{ background: var(--chatbg) !important; }
+        
     /* nickname placement fixing*/
-    span[class="x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft"]:has(span[title]):after{
-        margin-bottom: 20px !important;
-    }
-
-    .x1yvgwvq, .xso031l{
-        border: 0
-    }
-    
-    /* text chatbg [auther + ops]
-        div[role="none"] > div > div[role="presentation"]{
-            background: #ac174a !important;
-        } 
-    */
-
+    span[class="x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft"]:has(span[title]):after{ margin-bottom: 20px !important; }
+    .x1yvgwvq, .xso031l{ border: 0 }
+    .x1k4qllp { outline: 10px solid #0000; }
+    .xyqdw3p { background-image: none !important; }
+        
     /* username */
-    div[class="html-div x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1xmf6yo x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]{
-            display: block;
-    }
+    div[class="html-div x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1xmf6yo x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]{ display: block; }
         
     /* reply bar */
-    div[class="xw8ag78 x10e4vud x1v7wizp x150e7gq xa3vuyk"] , div[class="html-div x14z9mp xat24cr x1lziwak x9f619 x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x1qjc9v5 x1oa3qoh x1m5k8mk x5ur3kl x13fuv20 x178xt8z x1qughib x1xmf6yo xjkvuk6 xv54qhq xf7dkkf xyamay9"]{
-        background: #0000 !important;
-    }
+    div[class="xw8ag78 x10e4vud x1v7wizp x150e7gq xa3vuyk"] , div[class="html-div x14z9mp xat24cr x1lziwak x9f619 x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x1qjc9v5 x1oa3qoh x1m5k8mk x5ur3kl x13fuv20 x178xt8z x1qughib x1xmf6yo xjkvuk6 xv54qhq xf7dkkf xyamay9"]{ background: #0000 !important; }
+        
+    div[class="html-div xdj266r x14z9mp xat24cr x1lziwak x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xyamay9 xv54qhq x1l90r2v xf7dkkf x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1 x1bs97v6 x1q0q8m5 xso031l xh8yej3"], div[class="x1qjc9v5 x1yvgwvq xjd31um x1ixjvfu xwt6s21 x1ua1ujl xksyday xshg46c xlej2ay x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x178xt8z x1lun4ml xso031l xpilrb4 x78zum5 xdt5ytf xw7yly9 x1ys307a x1yztbdb xyqm7xq"]{ border: 0 }
     
-    div[class="html-div xdj266r x14z9mp xat24cr x1lziwak x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xyamay9 xv54qhq x1l90r2v xf7dkkf x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1 x1bs97v6 x1q0q8m5 xso031l xh8yej3"], div[class="x1qjc9v5 x1yvgwvq xjd31um x1ixjvfu xwt6s21 x1ua1ujl xksyday xshg46c xlej2ay x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x178xt8z x1lun4ml xso031l xpilrb4 x78zum5 xdt5ytf xw7yly9 x1ys307a x1yztbdb xyqm7xq"]{
-        border: 0
-    }
-    
-    a.x1i10hfl.x1qjc9v5.xjbqb8w.xjqpnuy.xa49m3k.xqeqjp1.x2hbi6w.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.x972fbf.xcfux6l.x1qhh985.xm0m39n.x9f619.x1ypdohk.xdl72j9.x2lah0s.xe8uvvx.x2lwn1j.xeuugli.x1n2onr6.x16tdsg8.x1hl2dhg.xggy1nq.x1ja2u2z.x1t137rt.x1q0g3np.x87ps6o.x1lku1pv.x1a2a7pz.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1lliihq.xdj266r.x11i5rnm.xat24cr.x1mh8g0r.xg6hnt2.x18wri0h.x1l895ks.xbbxn1n.xxbr6pl.x1y1aw1k.xwib8y2:hover {
-        background-color: #ffffff20;
-    }
+    a.x1i10hfl.x1qjc9v5.xjbqb8w.xjqpnuy.xa49m3k.xqeqjp1.x2hbi6w.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.x972fbf.xcfux6l.x1qhh985.xm0m39n.x9f619.x1ypdohk.xdl72j9.x2lah0s.xe8uvvx.x2lwn1j.xeuugli.x1n2onr6.x16tdsg8.x1hl2dhg.xggy1nq.x1ja2u2z.x1t137rt.x1q0g3np.x87ps6o.x1lku1pv.x1a2a7pz.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1lliihq.xdj266r.x11i5rnm.xat24cr.x1mh8g0r.xg6hnt2.x18wri0h.x1l895ks.xbbxn1n.xxbr6pl.x1y1aw1k.xwib8y2:hover { background-color: #ffffff20; }
 
-    .x1k4qllp {
-        outline: 10px solid #0000;
-    }
 
-    .xyqdw3p {
-        background-image: none !important;
-    }
-
-    ::-webkit-scrollbar,
-    ::-webkit-scrollbar-corner,
-    ::-webkit-scrollbar,
-    ::-webkit-scrollbar-button,
-    ::-webkit-scrollbar-thumb,
-    ::-webkit-scrollbar-thumb:not(:active):hover,
-    ::-webkit-scrollbar-thumb:active,
-    ::-webkit-scrollbar-thumb:hover:active {
-        display: none !important;
-    }
-
+    ::-webkit-scrollbar, ::-webkit-scrollbar-corner, ::-webkit-scrollbar, ::-webkit-scrollbar-button, ::-webkit-scrollbar-thumb,
+    ::-webkit-scrollbar-thumb:not(:active):hover, ::-webkit-scrollbar-thumb:active, ::-webkit-scrollbar-thumb:hover:active { display: none !important; }
+        
     /* chatlist margin for note align */
-    div[class="html-div xdj266r x14z9mp xat24cr x1lziwak x1qjc9v5 x9f619 x78zum5 xdt5ytf x1iyjqo2 xl56j7k xeuugli xwib8y2 x13jy36j x64bnmy x1y1aw1k"]{
-        margin-inline: 8px
-    }
+    div[class="html-div xdj266r x14z9mp xat24cr x1lziwak x1qjc9v5 x9f619 x78zum5 xdt5ytf x1iyjqo2 xl56j7k xeuugli xwib8y2 x13jy36j x64bnmy x1y1aw1k"]{ margin-inline: 8px }
 
     /* chat pane border radius */
-    div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1iyjqo2 x2lwn1j xeuugli x1q0g3np xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1 xcrg951 x6prxxf x6ikm8r x10wlt62 x1n2onr6 xh8yej3"]{
-        border-radius: 10px
-    }
+    div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1iyjqo2 x2lwn1j xeuugli x1q0g3np xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1 xcrg951 x6prxxf x6ikm8r x10wlt62 x1n2onr6 xh8yej3"]{ border-radius: 10px }
 
 }
 
 @-moz-document url("https://www.instagram.com/direct/t/17846265992645472/") {
-
     if bishakha{    
         :root{
             --chatbg:           linear-gradient(135deg, #5c0b27, #9c266a, #b11d30, #3a0a45) !important;
@@ -211,72 +163,7 @@
             --autext:           #fff;  
             --ptext:            #fff;
             --send:             #fff;
-        }
-        
-        div[class*="xw8ag78"],  div[class*="xw8ag78"] > div[class*="html-div"],
-        div[data-pagelet="IGDComposerForCannes"] > div > div > div > div > div > div > div > div[class*="html-div"]{
-            background: #0000 !important;
-        }
-        /*Composer Consistancy, Reply Bar, header, textbarbg, textbarbg(active), pin, body*/
-        div[data-pagelet="IGDInboxHeaderOffMsys"],
-        div[data-pagelet="IGDComposerForCannes"], 
-        div[class*="html-div"]:has([aria-label="Pinned message icon"]),
-        div[class="x78zum5 x1cqoux5 xdt5ytf"]{
-            background: var(--chatbg) !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
-            background-attachment: fixed !important;
-            background-size: cover !important;
-            border: 0 !important;
-        }
-        
-        svg[aria-label="Choose an emoji"]:not(svg[class="x1lliihq x1n2onr6 x5n08af"]:has(path[d="M21 11h-8V3a1 1 0 1 0-2 0v8H3a1 1 0 1 0 0 2h8v8a1 1 0 1 0 2 0v-8h8a1 1 0 1 0 0-2Z"])),
-        svg[aria-label*="React"],
-        svg[aria-label*="Reply"],
-        svg[aria-label*="See"],
-        svg[aria-label="Voice Clip"],
-        svg[aria-label="Add Photo or Video"],
-        svg[aria-label="Choose a GIF or sticker"],
-        svg[aria-label="Conversation information"],
-        svg[aria-label="Cancel reply"]
-        {
-            filter: invert(0%) !important; 
-        }
-        
-        /* Instagram: Turn Send icon black */
-        svg[aria-label="Send"] path { fill: var(--send) !important; }
-        
-        p[class="xat24cr xdj266r"]{
-            color: var(--ptext) !important
-        }
-        
-        .x88qbow{ background: var(--friendtxtbg) !important; --primary-text: var(--text)}
-        div[class="x1f6kntn x1btupbp x1mzt3pk x5n08af"]{
-            color: var(--text) !important
-        }
-            
-        .x5slmwz{ background: var(--authertxtbg) !important;}
-        div[class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x1gslohp x14z9mp x12nagc x1lziwak x1yc453h x126k92a xyk4ms5"], div[class="x1f6kntn x1btupbp x1mzt3pk x14ctfv"]{
-            color: var(--autext) !important
-        }
-
-        /* username */
-        div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xkj4a21 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f xs83m0k xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k"] > * > * > *,
-        div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xkj4a21 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f xs83m0k xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k"] > * > *,
-        /* text bar elements */
-        span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x10flsy6 x6prxxf x1fcty0u xzsf02u x1yc453h x4zkp8e x41vudc xq9mrsl"] > *,
-        div[class*="notranslate"], 
-        div[class="x1qjc9v5 x9f619 x78zum5 xdl72j9 xdt5ytf x2lah0s x2lwn1j xeuugli x1n2onr6 x1ja2u2z xu06os2 x1ok221b"] > *, 
-        span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x10flsy6 x6prxxf x1fcty0u xzsf02u x1yc453h x4zkp8e x41vudc xq9mrsl"] > * > *  {
-            color: var(--flavour)!important;
-        }
-
-        /* seen */
-        div[class*="html-div"] > span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb"]{ fill: var(--flavour) !important; }
-
-        /* emoji svg */
-        div[class="x6s0dn4 x78zum5 xdt5ytf xl56j7k"] > svg[class="x1lliihq x1n2onr6 x5n08af"]:not(svg[class="x1lliihq x1n2onr6 x5n08af"]:has(path[d="M21 11h-8V3a1 1 0 1 0-2 0v8H3a1 1 0 1 0 0 2h8v8a1 1 0 1 0 2 0v-8h8a1 1 0 1 0 0-2Z"])){
-            filter: invert(0%)
+            --filter:           invert(90%);
         }
     }
 }
@@ -292,73 +179,7 @@
             --autext:           #f8cad2;
             --ptext:            #fff;
             --send:             #fff;
-        }
-        
-    
-        div[class*="xw8ag78"],  div[class*="xw8ag78"] > div[class*="html-div"],
-        div[data-pagelet="IGDComposerForCannes"] > div > div > div > div > div > div > div > div[class*="html-div"]{
-            background: #0000 !important;
-        }
-        /*Composer Consistancy, Reply Bar, header, textbarbg, textbarbg(active), pin, body*/
-        div[data-pagelet="IGDInboxHeaderOffMsys"],
-        div[data-pagelet="IGDComposerForCannes"], 
-        div[class*="html-div"]:has([aria-label="Pinned message icon"]),
-        div[class="x78zum5 x1cqoux5 xdt5ytf"]{
-            background: var(--chatbg) !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
-            background-attachment: fixed !important;
-            background-size: cover !important;
-            border: 0 !important;
-        }
-        
-        svg[aria-label="Choose an emoji"]:not(svg[class="x1lliihq x1n2onr6 x5n08af"]:has(path[d="M21 11h-8V3a1 1 0 1 0-2 0v8H3a1 1 0 1 0 0 2h8v8a1 1 0 1 0 2 0v-8h8a1 1 0 1 0 0-2Z"])),
-        svg[aria-label*="React"],
-        svg[aria-label*="Reply"],
-        svg[aria-label*="See"],
-        svg[aria-label="Voice Clip"],
-        svg[aria-label="Add Photo or Video"],
-        svg[aria-label="Choose a GIF or sticker"],
-        svg[aria-label="Conversation information"],
-        svg[aria-label="Cancel reply"]
-        {
-            filter: invert(0%) !important; 
-        }
-        
-        /* Instagram: Turn Send icon black */
-        svg[aria-label="Send"] path { fill: var(--send) !important; }
-        
-        p[class="xat24cr xdj266r"]{
-            color: var(--ptext) !important
-        }
-        
-        .x88qbow{ background: var(--friendtxtbg) !important; --primary-text: var(--text)}
-        div[class="x1f6kntn x1btupbp x1mzt3pk x5n08af"]{
-            color: var(--text) !important
-        }
-            
-        .x5slmwz{ background: var(--authertxtbg) !important;}
-        div[class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x1gslohp x14z9mp x12nagc x1lziwak x1yc453h x126k92a xyk4ms5"], div[class="x1f6kntn x1btupbp x1mzt3pk x14ctfv"]{
-            color: var(--autext) !important
-        }
-
-        /* username */
-        div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xkj4a21 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f xs83m0k xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k"] > * > * > *,
-        div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xkj4a21 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f xs83m0k xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k"] > * > *,
-        /* text bar elements */
-        span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x10flsy6 x6prxxf x1fcty0u xzsf02u x1yc453h x4zkp8e x41vudc xq9mrsl"] > *,
-        div[class*="notranslate"], 
-        div[class="x1qjc9v5 x9f619 x78zum5 xdl72j9 xdt5ytf x2lah0s x2lwn1j xeuugli x1n2onr6 x1ja2u2z xu06os2 x1ok221b"] > *, 
-        span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x10flsy6 x6prxxf x1fcty0u xzsf02u x1yc453h x4zkp8e x41vudc xq9mrsl"] > * > *  {
-            color: var(--flavour)!important;
-        }
-
-        /* seen */
-        div[class*="html-div"] > span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb"]{ fill: var(--flavour) !important; }
-
-        /* emoji svg */
-        div[class="x6s0dn4 x78zum5 xdt5ytf xl56j7k"] > svg[class="x1lliihq x1n2onr6 x5n08af"]:not(svg[class="x1lliihq x1n2onr6 x5n08af"]:has(path[d="M21 11h-8V3a1 1 0 1 0-2 0v8H3a1 1 0 1 0 0 2h8v8a1 1 0 1 0 2 0v-8h8a1 1 0 1 0 0-2Z"])){
-            filter: invert(0%)
+            --filter:           invert(10%);
         }
     }
 }
@@ -372,81 +193,13 @@
             --authertxtbg:      #262626;
             --text:             #000;
             --send:             #fff;
-        }
-
-        div[class*="xw8ag78"],  div[class*="xw8ag78"] > div[class*="html-div"],
-        div[data-pagelet="IGDComposerForCannes"] > div > div > div > div > div > div > div > div[class*="html-div"]{
-            background: #0000 !important;
-        }
-        /*Composer Consistancy, Reply Bar, header, textbarbg, textbarbg(active), pin, body*/
-        div[data-pagelet="IGDInboxHeaderOffMsys"],
-        div[data-pagelet="IGDComposerForCannes"], 
-        div[class*="html-div"]:has([aria-label="Pinned message icon"]),
-        div[class="x78zum5 x1cqoux5 xdt5ytf"]{
-            background: var(--chatbg) !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
-            background-attachment: fixed !important;
-            background-size: cover !important;
-            border: 0 !important;
-        }
-        
-        svg[aria-label="Choose an emoji"]:not(svg[class="x1lliihq x1n2onr6 x5n08af"]:has(path[d="M21 11h-8V3a1 1 0 1 0-2 0v8H3a1 1 0 1 0 0 2h8v8a1 1 0 1 0 2 0v-8h8a1 1 0 1 0 0-2Z"])),
-        svg[aria-label*="React"],
-        svg[aria-label*="Reply"],
-        svg[aria-label*="See"],
-        svg[aria-label="Voice Clip"],
-        svg[aria-label="Add Photo or Video"],
-        svg[aria-label="Choose a GIF or sticker"],
-        svg[aria-label="Audio call"],
-        svg[aria-label="Video call"],
-        svg[aria-label="Conversation information"],
-        svg[aria-label="Cancel reply"]
-        {
-            filter: invert(90%) !important; 
-        }
-        
-        /* Instagram: Turn Send icon black */
-        svg[aria-label="Send"] path { fill: var(--send) !important; }
-        
-        p[class="xat24cr xdj266r"]{
-            color: var(--ptext) !important
-        }
-        
-        .x88qbow{ background: var(--friendtxtbg) !important; --primary-text: var(--text)}
-        div[class="x1f6kntn x1btupbp x1mzt3pk x5n08af"]{
-            color: var(--text) !important
-        }
-            
-        .x5slmwz{ background: var(--authertxtbg) !important;}
-        div[class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x1gslohp x14z9mp x12nagc x1lziwak x1yc453h x126k92a xyk4ms5"], div[class="x1f6kntn x1btupbp x1mzt3pk x14ctfv"]{
-            color: var(--autext) !important
-        }
-
-        /* username */
-        div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xkj4a21 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f xs83m0k xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k"] > * > * > *,
-        div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xkj4a21 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f xs83m0k xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k"] > * > *,
-        /* text bar elements */
-        span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x10flsy6 x6prxxf x1fcty0u xzsf02u x1yc453h x4zkp8e x41vudc xq9mrsl"] > *,
-        div[class*="notranslate"], 
-        div[class="x1qjc9v5 x9f619 x78zum5 xdl72j9 xdt5ytf x2lah0s x2lwn1j xeuugli x1n2onr6 x1ja2u2z xu06os2 x1ok221b"] > *, 
-        span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x10flsy6 x6prxxf x1fcty0u xzsf02u x1yc453h x4zkp8e x41vudc xq9mrsl"] > * > *  {
-            color: var(--flavour)!important;
-        }
-
-        /* seen */
-        div[class*="html-div"] > span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb"]{ fill: var(--flavour) !important; }
-
-        /* emoji svg */
-        div[class="x6s0dn4 x78zum5 xdt5ytf xl56j7k"] > svg[class="x1lliihq x1n2onr6 x5n08af"]:not(svg[class="x1lliihq x1n2onr6 x5n08af"]:has(path[d="M21 11h-8V3a1 1 0 1 0-2 0v8H3a1 1 0 1 0 0 2h8v8a1 1 0 1 0 2 0v-8h8a1 1 0 1 0 0-2Z"])){
-            filter: invert(0%)
+            --filter:           invert(90%);
         }
     }
 }
 
 
 @-moz-document url("https://www.instagram.com/direct/t/17843648601085441/") {
-
     if hiya{
         :root{
             --chatbg:           linear-gradient(135deg, #4e192b, #000);
@@ -454,33 +207,7 @@
             --authertxtbg:      #262626;
             --text:             #000;
             --send:             #fff;
-        }
-
-        div[class*="xw8ag78"],  div[class*="xw8ag78"] > div[class*="html-div"],
-        div[data-pagelet="IGDComposerForCannes"] > div > div > div > div > div > div > div > div[class*="html-div"]{
-            background: #0000 !important;
-        }
-        /*Composer Consistancy, Reply Bar, header, textbarbg, textbarbg(active), pin, body*/
-        div[data-pagelet="IGDInboxHeaderOffMsys"],
-        div[data-pagelet="IGDComposerForCannes"], 
-        div[class*="html-div"]:has([aria-label="Pinned message icon"]),
-        div[class="x78zum5 x1cqoux5 xdt5ytf"]{
-            background: var(--chatbg) !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
-            background-attachment: fixed !important;
-            background-size: cover !important;
-            border: 0 !important;
-        }
-        .x5slmwz{ background: var(--authertxtbg) !important;}
-        .x88qbow{ background: var(--friendtxtbg) !important; --primary-text: var(--text)}
-        div[class="x1f6kntn x1btupbp x1mzt3pk x5n08af"]{
-            color: var(--text) !important
-        }
-
-        /* Instagram: Turn Send icon pink */
-        svg[aria-label="Send"] path {
-            fill: var(--send) !important;
+            --filter:           invert(90%);
         }
     }
 }
@@ -488,23 +215,6 @@
     if shreya{
         :root{
             --chatbg:           #006571;
-        }
-        
-        div[class*="xw8ag78"],  div[class*="xw8ag78"] > div[class*="html-div"],
-        div[data-pagelet="IGDComposerForCannes"] > div > div > div > div > div > div > div > div[class*="html-div"]{
-            background: #0000 !important;
-        }
-        /*Composer Consistancy, Reply Bar, header, textbarbg, textbarbg(active), pin, body*/
-        div[data-pagelet="IGDInboxHeaderOffMsys"],
-        div[data-pagelet="IGDComposerForCannes"], 
-        div[class*="html-div"]:has([aria-label="Pinned message icon"]),
-        div[class="x78zum5 x1cqoux5 xdt5ytf"]{
-            background: var(--chatbg) !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
-            background-attachment: fixed !important;
-            background-size: cover !important;
-            border: 0 !important;
         }
     }
 }
@@ -519,71 +229,8 @@
             --text:             #111;
             --autext:           #fff;
             --ptext:            #fff;
+            --filter:           invert(90%);
         }
-
-        div[class*="xw8ag78"],  div[class*="xw8ag78"] > div[class*="html-div"],
-        div[data-pagelet="IGDComposerForCannes"] > div > div > div > div > div > div > div > div[class*="html-div"]{
-            background: #0000 !important;
-        }
-        /*Composer Consistancy, Reply Bar, header, textbarbg, textbarbg(active), pin, body*/
-        div[data-pagelet="IGDInboxHeaderOffMsys"],
-        div[data-pagelet="IGDComposerForCannes"], 
-        div[class*="html-div"]:has([aria-label="Pinned message icon"]),
-        div[class="x78zum5 x1cqoux5 xdt5ytf"]{
-            background: var(--chatbg) !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
-            background-attachment: fixed !important;
-            background-size: cover !important;
-            border: 0 !important;
-        }
-        
-        
-        svg[aria-label="Choose an emoji"]:not(svg[class="x1lliihq x1n2onr6 x5n08af"]:has(path[d="M21 11h-8V3a1 1 0 1 0-2 0v8H3a1 1 0 1 0 0 2h8v8a1 1 0 1 0 2 0v-8h8a1 1 0 1 0 0-2Z"])),
-        svg[aria-label*="React"],
-        svg[aria-label*="Reply"],
-        svg[aria-label*="See"],
-        svg[aria-label="Voice Clip"],
-        svg[aria-label="Add Photo or Video"],
-        svg[aria-label="Choose a GIF or sticker"], svg[aria-label="Audio call"],
-        svg[aria-label="Video call"],
-        svg[aria-label="Conversation information"],
-        svg[aria-label="Cancel reply"]
-        {
-            filter: invert(90%) !important; 
-        }
-        
-        /* Instagram: Turn Send icon black */
-        svg[aria-label="Send"] path { fill: var(--send) !important; }
-        
-        p[class="xat24cr xdj266r"]{
-            color: var(--ptext) !important
-        }
-        
-        .x88qbow{ background: var(--friendtxtbg) !important; --primary-text: var(--text)}
-        div[class="x1f6kntn x1btupbp x1mzt3pk x5n08af"]{
-            color: var(--text) !important
-        }
-            
-        .x5slmwz{ background: var(--authertxtbg) !important;}
-        div[class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x1gslohp x14z9mp x12nagc x1lziwak x1yc453h x126k92a xyk4ms5"], div[class="x1f6kntn x1btupbp x1mzt3pk x14ctfv"]{
-            color: var(--autext) !important
-        }
-
-        /* username */
-        div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xkj4a21 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f xs83m0k xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k"] > * > * > *,
-        div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xkj4a21 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f xs83m0k xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k"] > * > *,
-        /* text bar elements */
-        span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x10flsy6 x6prxxf x1fcty0u xzsf02u x1yc453h x4zkp8e x41vudc xq9mrsl"] > *,
-        div[class*="notranslate"], 
-        div[class="x1qjc9v5 x9f619 x78zum5 xdl72j9 xdt5ytf x2lah0s x2lwn1j xeuugli x1n2onr6 x1ja2u2z xu06os2 x1ok221b"] > *, 
-        span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x10flsy6 x6prxxf x1fcty0u xzsf02u x1yc453h x4zkp8e x41vudc xq9mrsl"] > * > *  {
-            color: var(--flavour)!important;
-        }
-
-        /* seen */
-        div[class*="html-div"] > span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb"]{ fill: var(--flavour) !important; }
-
     }
 }
 
@@ -596,74 +243,7 @@
             --friendtxtbg:      #94c6a8;
             --authertxtbg:      #340202;
             --send:             #fff;
-        }
-        
-        div[class*="xw8ag78"],  div[class*="xw8ag78"] > div[class*="html-div"],
-        div[data-pagelet="IGDComposerForCannes"] > div > div > div > div > div > div > div > div[class*="html-div"]{
-            background: #0000 !important;
-        }
-        /*Composer Consistancy, Reply Bar, header, textbarbg, textbarbg(active), pin, body*/
-        div[data-pagelet="IGDInboxHeaderOffMsys"],
-        div[data-pagelet="IGDComposerForCannes"], 
-        div[class*="html-div"]:has([aria-label="Pinned message icon"]),
-        div[class="x78zum5 x1cqoux5 xdt5ytf"]{
-            background: var(--chatbg) !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
-            background-attachment: fixed !important;
-            background-size: cover !important;
-            border: 0 !important;
-        }
-        
-        svg[aria-label="Choose an emoji"]:not(svg[class="x1lliihq x1n2onr6 x5n08af"]:has(path[d="M21 11h-8V3a1 1 0 1 0-2 0v8H3a1 1 0 1 0 0 2h8v8a1 1 0 1 0 2 0v-8h8a1 1 0 1 0 0-2Z"])),
-        svg[aria-label*="React"],
-        svg[aria-label*="Reply"],
-        svg[aria-label*="See"],
-        svg[aria-label="Voice Clip"],
-        svg[aria-label="Add Photo or Video"],
-        svg[aria-label="Choose a GIF or sticker"],
-        svg[aria-label="Audio call"],
-        svg[aria-label="Video call"],
-        svg[aria-label="Conversation information"],
-        svg[aria-label="Cancel reply"]
-        {
-            filter: invert(0%) !important; 
-        }
-        
-        /* Instagram: Turn Send icon black */
-        svg[aria-label="Send"] path { fill: var(--send) !important; }
-        
-        p[class="xat24cr xdj266r"]{
-            color: var(--ptext) !important
-        }
-        
-        .x88qbow{ background: var(--friendtxtbg) !important; --primary-text: var(--text)}
-        div[class="x1f6kntn x1btupbp x1mzt3pk x5n08af"]{
-            color: var(--text) !important
-        }
-            
-        .x5slmwz{ background: var(--authertxtbg) !important;}
-        div[class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x1gslohp x14z9mp x12nagc x1lziwak x1yc453h x126k92a xyk4ms5"], div[class="x1f6kntn x1btupbp x1mzt3pk x14ctfv"]{
-            color: var(--autext) !important
-        }
-
-        /* username */
-        div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xkj4a21 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f xs83m0k xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k"] > * > * > *,
-        div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xkj4a21 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f xs83m0k xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k"] > * > *,
-        /* text bar elements */
-        span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x10flsy6 x6prxxf x1fcty0u xzsf02u x1yc453h x4zkp8e x41vudc xq9mrsl"] > *,
-        div[class*="notranslate"], 
-        div[class="x1qjc9v5 x9f619 x78zum5 xdl72j9 xdt5ytf x2lah0s x2lwn1j xeuugli x1n2onr6 x1ja2u2z xu06os2 x1ok221b"] > *, 
-        span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x10flsy6 x6prxxf x1fcty0u xzsf02u x1yc453h x4zkp8e x41vudc xq9mrsl"] > * > *  {
-            color: var(--flavour)!important;
-        }
-
-        /* seen */
-        div[class*="html-div"] > span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb"]{ fill: var(--flavour) !important; }
-
-        /* emoji svg */
-        div[class="x6s0dn4 x78zum5 xdt5ytf xl56j7k"] > svg[class="x1lliihq x1n2onr6 x5n08af"]:not(svg[class="x1lliihq x1n2onr6 x5n08af"]:has(path[d="M21 11h-8V3a1 1 0 1 0-2 0v8H3a1 1 0 1 0 0 2h8v8a1 1 0 1 0 2 0v-8h8a1 1 0 1 0 0-2Z"])){
-            filter: invert(0%)
+            --filter:           invert(90%);
         }
     }
 }
@@ -680,73 +260,11 @@
             --autext:           #fff;
             --ptext:            #fff;
             --ptext:            #fff;
+            --filter:           invert(0%);
         }
-
-        div[class*="xw8ag78"],  div[class*="xw8ag78"] > div[class*="html-div"],
-        div[data-pagelet="IGDComposerForCannes"] > div > div > div > div > div > div > div > div[class*="html-div"]{
-            background: #0000 !important;
-        }
-        /*Composer Consistancy, Reply Bar, header, textbarbg, textbarbg(active), pin, body*/
-        div[data-pagelet="IGDInboxHeaderOffMsys"],
-        div[data-pagelet="IGDComposerForCannes"], 
-        div[class*="html-div"]:has([aria-label="Pinned message icon"]),
-        div[class="x78zum5 x1cqoux5 xdt5ytf"]{
-            background: var(--chatbg) !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
-            background-attachment: fixed !important;
-            background-size: cover !important;
-            border: 0 !important;
-        }
-        
-        
-        svg[aria-label="Choose an emoji"]:not(svg[class="x1lliihq x1n2onr6 x5n08af"]:has(path[d="M21 11h-8V3a1 1 0 1 0-2 0v8H3a1 1 0 1 0 0 2h8v8a1 1 0 1 0 2 0v-8h8a1 1 0 1 0 0-2Z"])),
-        svg[aria-label*="React"],
-        svg[aria-label*="Reply"],
-        svg[aria-label*="See"],
-        svg[aria-label="Voice Clip"],
-        svg[aria-label="Add Photo or Video"],
-        svg[aria-label="Choose a GIF or sticker"], svg[aria-label="Audio call"],
-        svg[aria-label="Video call"],
-        svg[aria-label="Conversation information"],
-        svg[aria-label="Cancel reply"]
-        {
-            filter: invert(0%) !important; 
-        }
-        
-        /* Instagram: Turn Send icon black */
-        svg[aria-label="Send"] path { fill: var(--send) !important; }
-        
-        p[class="xat24cr xdj266r"]{
-            color: var(--ptext) !important
-        }
-        
-        .x88qbow{ background: var(--friendtxtbg) !important; --primary-text: var(--text)}
-        div[class="x1f6kntn x1btupbp x1mzt3pk x5n08af"]{
-            color: var(--text) !important
-        }
-            
-        .x5slmwz{ background: var(--authertxtbg) !important;}
-        div[class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x1gslohp x14z9mp x12nagc x1lziwak x1yc453h x126k92a xyk4ms5"], div[class="x1f6kntn x1btupbp x1mzt3pk x14ctfv"]{
-            color: var(--autext) !important
-        }
-
-        /* username */
-        div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xkj4a21 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f xs83m0k xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k"] > * > * > *,
-        div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xkj4a21 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f xs83m0k xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k"] > * > *,
-        /* text bar elements */
-        span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x10flsy6 x6prxxf x1fcty0u xzsf02u x1yc453h x4zkp8e x41vudc xq9mrsl"] > *,
-        div[class*="notranslate"], 
-        div[class="x1qjc9v5 x9f619 x78zum5 xdl72j9 xdt5ytf x2lah0s x2lwn1j xeuugli x1n2onr6 x1ja2u2z xu06os2 x1ok221b"] > *, 
-        span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x10flsy6 x6prxxf x1fcty0u xzsf02u x1yc453h x4zkp8e x41vudc xq9mrsl"] > * > *  {
-            color: var(--flavour)!important;
-        }
-
-        /* seen */
-        div[class*="html-div"] > span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb"]{ fill: var(--flavour) !important; }
-
     }
 }
+
 @-moz-document url("https://www.instagram.com/direct/t/17849438022335312/") {
     if apurbo{    
         :root{
@@ -759,8 +277,13 @@
             --autext:           #fff;
             --ptext:            #fff;
             --ptext:            #fff;
+            --filter:           invert(90%);
         }
+    }
+}
 
+@-moz-document url-prefix("https://www.instagram.com/direct/t/") {
+    
         div[class*="xw8ag78"],  div[class*="xw8ag78"] > div[class*="html-div"],
         div[data-pagelet="IGDComposerForCannes"] > div > div > div > div > div > div > div > div[class*="html-div"]{
             background: #0000 !important;
@@ -790,7 +313,7 @@
         svg[aria-label="Conversation information"],
         svg[aria-label="Cancel reply"]
         {
-            filter: invert(90%) !important; 
+            filter: var(--filter)  !important; 
         }
         
         /* Instagram: Turn Send icon black */
@@ -825,4 +348,3 @@
         div[class*="html-div"] > span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb"]{ fill: var(--flavour) !important; }
 
     }
-}
