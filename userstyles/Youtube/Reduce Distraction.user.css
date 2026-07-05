@@ -220,6 +220,11 @@
        GLOBAL
     ───────────────────────────────────────────── */
 
+    
+    ytd-brand-video-singleton-renderer,
+    div[id="dismissible"]:has([href="/playables"]){
+        display: none;
+    }
     #playlist.ytd-watch-flexy {
         max-height: 95vh;
     }
