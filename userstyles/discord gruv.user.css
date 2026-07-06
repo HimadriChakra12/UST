@@ -11,7 +11,8 @@
     :root{
         --bg: #282828;
         --bg1: #1d2021;
-        --color: #fbf1c7
+        --color: #fbf1c7;
+        --links: #f5e8b2;
     }
     
     *{border: 0 !important;}
@@ -86,7 +87,15 @@
     }
 
     a,abbr,acronym,address,applet,big,blockquote,body,caption,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,form,h1,h2,
-    h3,h4,h5,h6,html,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,table,tbody,td,tfoot,th,thead,tr,tt,ul,var { color: var(--color)  }
+    h3,h4,h5,h6,html,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,strike,strong,table,tbody,td,tfoot,th,thead,tr,tt,ul,var, span
+    { color: var(--color)  }
+    
+    a > span
+    { 
+        color: var(--links);
+        text-decoration: underline;
+    }
+    
     div[class="chat_f75fb0"] { border-radius: 15px !important; } 
     div[class="defaultColor__4bd52 lineClamp1__4bd52 text-sm/medium_cf4812"] { align-items: flex-start  }
 
