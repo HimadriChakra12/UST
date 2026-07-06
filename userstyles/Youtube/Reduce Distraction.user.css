@@ -13,7 +13,7 @@
 @var checkbox hideSecondary         "└⟶ Hide Right feed sidebar"           1
 
 @var checkbox hideHome              "⦿ Hide Home"                           0
-@var checkbox fixedHomerecommenation"└⟶ Fixed Recomandations"              1
+@var checkbox fixedHomerecommenation"└⟶ Fixed Recomandations"              0
 @var checkbox hideShorts            "⦿ Hide Shorts"                         1
 @var checkbox hideShortsTab         "└⟶ Hide Shorts Tab (sidebar)"         1
 @var checkbox hideShortsHomeFeed    "└⟶ Hide Shorts in Home Feed"          1
