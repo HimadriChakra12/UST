@@ -1,0 +1,177 @@
+/* ==UserStyle==
+@name           open.spotify.com
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("open.spotify.com") {
+    /* Insert code here... */
+    :root{
+        --bg-dark: #121212;
+    }
+    *{animation: none !important; transition: none !important}
+    
+    [class="iRGr6yO6lPcAKUoT"]
+    {
+        background: var(--bg-dark)
+    }
+    div[class="o9SONbmdTWwKgbUo rlQO4qjGcwcPEZXN"]
+    {
+        position: absolute;
+        bottom: 0 !important;
+    }
+    div[class="PuvORL_2IYHBmI6V"]
+    {
+        & [class="Pmbe_Euf4R4fGarW ihE8PJvbefgJmRhO XDuVZbmy09wez6LS"],
+        & [class="RxlwJ6tCp4g6AAAH"],
+        & [class="kPLEzaZADEAjWLC2"],
+        & [class="c9vbZCTvJP0caUBz"],
+        & [class="dbkoNhkHaGoGEWoY"],
+        & [class="ikE27Bu2baQl9eex"],
+        & [class="OAj0DnLweBkv1xyZ"]
+        {
+            height: 10px;
+        }
+    }
+    div[data-testid="playback-position"]
+    {
+        position: absolute;
+        left: 45%;
+    }
+    div[data-testid="playback-duration"]
+    {
+        position: absolute;
+        right: 45%;
+    }
+    [id="Desktop_LeftSidebar_Id"]{
+        &:before
+        {
+            content: 'Library';
+            position: absolute;
+            top: -10px;
+            left: 5px;
+            background: var(--bg-dark) !important;
+            padding: 0 8px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--inactive);
+            transition: color 0.2s ease;
+            z-index: 100000;
+        }
+        &{
+            border-radius: 0px;
+            padding: 5px;
+            background: var(--bg-dark)
+        }
+        &:hover{
+            border: 1px solid;
+        }
+    }
+    [id="Desktop_LeftSidebar_Id"]:has([class="F0DeHdUi7cNLlJ6D YourLibraryX YPRhFiIfXdwCZJ9q"])
+    {
+        width: 80px;
+    }
+    [class="LtqMCWXd5Nkemkym"]{
+        &:before
+        {
+            content: 'Sidebar';
+            position: absolute;
+            top: -10px;
+            left: 5px;
+            background: var(--bg-dark) !important;
+            padding: 0 8px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--inactive);
+            transition: color 0.2s ease;
+            z-index: 100000000;
+        }
+        &{
+            border-radius: 0px;
+            padding: 5px;
+            background: var(--bg-dark)
+        }
+        &:hover{
+            border: 1px solid;
+        }
+    }
+    [id="global-nav-bar"]{
+        &:before
+        {
+            content: 'nav';
+            position: absolute;
+            top: -10px;
+            left: 5px;
+            background: var(--bg-dark) !important;
+            padding: 0 8px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--inactive);
+            transition: color 0.2s ease;
+            z-index: 100000;
+        }
+        &{
+            border-radius: 0px;
+            padding: 5px;
+            background: var(--bg-dark)
+        }
+        &:hover{
+            border: 1px solid;
+        }
+    }
+    [class="Q2n2bdBXy28oQWoC nRWw2cACzspvO3GF"]{
+        &:before
+        {
+            content: 'Playing';
+            position: absolute;
+            top: 0px;
+            left: 5px;
+            background: var(--bg-dark) !important;
+            padding: 0 8px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--inactive);
+            transition: color 0.2s ease;
+            z-index: 10000000000000000000 !important;
+        }
+        &{
+            border-radius: 0px;
+            padding: 5px;
+            background: var(--bg-dark);
+        }
+        &:hover{
+            border: 1px solid;
+        }
+    }
+    [id="main-view"]{
+        &:before
+        {
+            content: 'Main';
+            position: absolute;
+            top: -10px;
+            left: 5px;
+            background: var(--bg-dark) !important;
+            padding: 0 8px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--inactive);
+            transition: color 0.2s ease;
+            z-index: 10000000000000000000 !important;
+        }
+        &{
+            border-radius: 0px;
+            padding: 5px;
+            background: var(--bg-dark)
+        }
+        &:hover{
+            border: 1px solid;
+        }
+    }
+
+    [class*="F0DeHdUi7cNLlJ6D"]
+    {
+        background: var(--bg-dark)
+    }
+}
