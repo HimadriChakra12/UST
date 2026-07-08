@@ -13,7 +13,6 @@
 
   // ---- tunables ----
   const CARET_COLOR = '#ebdbb2'; // fat caret fill
-
   const TRANSITION_MS = 80;                        // movement animation speed
   const BLINK = true;                               // blink when idle
   const BLINK_INTERVAL_MS = 530;
@@ -134,31 +133,47 @@
   }
 
   // ---- contenteditable caret rect via Selection API ----
+  // Never mutates the DOM (no marker-node insertion) — editors like Slate/React
+  // based message boxes can wipe out inserted nodes mid-render, which used to
+  // throw and silently kill the overlay for that field.
   function getEditableCaretRect(el) {
     const sel = window.getSelection();
     if (!sel || sel.rangeCount === 0) return null;
     const range = sel.getRangeAt(0).cloneRange();
     range.collapse(true);
 
-    let rect = range.getClientRects()[0];
-    if (!rect) {
-      // fallback: measure a temporary zero-width char
-      const marker = document.createTextNode('\u200b');
-      range.insertNode(marker);
-      rect = marker.getBoundingClientRect
-        ? range.getBoundingClientRect()
-        : null;
-      marker.parentNode && marker.parentNode.removeChild(marker);
-      if (!rect) return null;
-    }
-
     const style = window.getComputedStyle(el);
     const charWidth = parseFloat(style.fontSize) * 0.6 || 8;
+    const lineHeight = parseFloat(style.lineHeight) || parseFloat(style.fontSize) * 1.2 || 18;
+
+    let rect = range.getBoundingClientRect();
+    const isEmpty = !rect || (rect.width === 0 && rect.height === 0 && rect.left === 0 && rect.top === 0);
+
+    if (isEmpty) {
+      // Empty line / empty element: derive position from the container's
+      // own box, but NEVER borrow its full width — otherwise an empty
+      // message box (whose only child is the contenteditable root itself)
+      // makes the caret as wide as the entire field.
+      let node = range.startContainer;
+      let containerEl = node.nodeType === Node.TEXT_NODE ? node.parentElement : node;
+
+      let posRect = null;
+      if (containerEl && containerEl !== el) {
+        const rects = containerEl.getClientRects();
+        if (rects.length) posRect = rects[0];
+      }
+      if (!posRect) {
+        posRect = (containerEl || el).getBoundingClientRect();
+      }
+
+      rect = { left: posRect.left, top: posRect.top, width: 0, height: posRect.height || lineHeight };
+    }
+
     return {
       left: rect.left,
       top: rect.top,
       width: Math.max(rect.width, charWidth),
-      height: rect.height || parseFloat(style.lineHeight) || parseFloat(style.fontSize) * 1.2,
+      height: rect.height || lineHeight,
     };
   }
 
@@ -183,25 +198,48 @@
 
   function activate(el) {
     if (activeEl === el) { updateCaret(); return; }
+
+    const switchingFields = !!activeEl;
     if (activeEl) activeEl.style.caretColor = '';
     activeEl = el;
     activeEl.style.caretColor = 'transparent'; // hide native caret
-    updateCaret();
+
+    if (switchingFields) {
+      // Snap instantly to the new field instead of sliding across the page
+      // from wherever the overlay previously was.
+      caret.style.transition = 'none';
+      updateCaret();
+      // Force reflow so the 'none' transition is actually applied before
+      // we restore animated transitions for movement within this field.
+      void caret.offsetHeight;
+      caret.style.transition = `left ${TRANSITION_MS}ms ease, top ${TRANSITION_MS}ms ease, height ${TRANSITION_MS}ms ease, width ${TRANSITION_MS}ms ease, opacity 90ms linear`;
+    } else {
+      caret.style.opacity = '0'; // first-ever focus: fade in from nothing rather than sliding in
+      updateCaret();
+    }
+  }
+
+  function realTarget(e) {
+    // e.target can be a shadow host (wrong element) for components that use
+    // shadow DOM internally; composedPath()[0] is the true originating node.
+    const path = typeof e.composedPath === 'function' ? e.composedPath() : null;
+    return (path && path.length) ? path[0] : e.target;
   }
 
   document.addEventListener('focusin', (e) => {
-    if (isEditable(e.target)) activate(e.target);
+    const t = realTarget(e);
+    if (isEditable(t)) activate(t);
   });
 
   document.addEventListener('focusout', (e) => {
-    if (e.target === activeEl) hideOverlay();
+    if (realTarget(e) === activeEl) hideOverlay();
   });
 
   // Recompute on typing, clicking, arrow-key navigation, scrolling, resizing.
-  ['input', 'keyup', 'click', 'select'].forEach(evt =>
-    document.addEventListener(evt, () => { if (activeEl) updateCaret(); }, true)
+  ['input', 'keyup', 'click', 'select', 'pointerup'].forEach(evt =>
+    document.addEventListener(evt, () => { if (activeEl) requestAnimationFrame(updateCaret); }, true)
   );
-  document.addEventListener('selectionchange', () => { if (activeEl) updateCaret(); });
+  document.addEventListener('selectionchange', () => { if (activeEl) requestAnimationFrame(updateCaret); });
   window.addEventListener('scroll', () => { if (activeEl) updateCaret(); }, true);
   window.addEventListener('resize', () => { if (activeEl) updateCaret(); });
 
