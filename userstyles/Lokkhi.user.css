@@ -36,17 +36,17 @@ div[id="google-one-tap-anchor"]{
     :root{
         --bg: #8c0048;
         
-        --bgimg1: url(https://i.vgy.me/kSSQ0R.jpg);
-        --position1: 70%;
-        --size1: 130%;
+        --b1 : url(https://i.vgy.me/kSSQ0R.jpg);
+        --p1 : 70%;
+        --s1 : 130%;
         
-        --bgimg2: url(https://i.vgy.me/376vyZ.png);
-        --position2: 24%;
-        --size2:  350%;
+        --b2 : url(https://i.vgy.me/376vyZ.png);
+        --p2 : 24%;
+        --s2 :  350%;
         
-        --bgimg: var(--bgimg2);
-        --position: var(--position2);
-        --size: var(--size2);
+        --bgimg     : var(--b2);
+        --position  : var(--p2);
+        --size      : var(--s2);
         
         --base: #c5364f;
         --highlight: red;
