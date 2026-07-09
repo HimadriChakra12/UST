@@ -35,13 +35,23 @@ div[id="google-one-tap-anchor"]{
 
     :root{
         --bg: #8c0048;
-        --bgimg: url(https://i.vgy.me/376vyZ.png);
+        
+        --bgimg1: url(https://i.vgy.me/kSSQ0R.jpg);
+        --position1: 70%;
+        --size1: 130%;
+        
+        --bgimg2: url(https://i.vgy.me/376vyZ.png);
+        --position2: 24%;
+        --size2:  350%;
+        
+        --bgimg: var(--bgimg2);
+        --position: var(--position2);
+        --size: var(--size2);
+        
         --base: #c5364f;
         --highlight: red;
         --press: blueviolet;
-        --position: 24%;
-        --color: rgba(143, 12, 12, .72);
-        --size: 350%;
+        --color: rgba(143, 12, 12, .62);
         --esaccent: #ff86a3;
         --txtaccent: #fd7070;
     }
