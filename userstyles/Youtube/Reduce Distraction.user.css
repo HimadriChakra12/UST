@@ -35,22 +35,25 @@
 ==/UserStyle== */
 
 @-moz-document domain("www.youtube.com"), domain("m.youtube.com") {
-   if playerdebloat{
-    if comments{
-        ytd-comments{
-            display: none;
+    if playerdebloat{
+        if comments{
+            ytd-comments{
+                display: none;
+            }
+        }
+        if hideSecondary{
+            div[id="secondary"]{
+                display: none;
+            }
+            body{
+                overflow-x: hidden;
+            }
         }
     }
-    if hideSecondary{
-        div[id="secondary"]{
-            display: none;
-        }
-    }
-}
     if hideHome {
                  div[id="contents"][class="style-scope ytd-rich-grid-renderer"]{
-         display: none !important
-     }
+                    display: none !important
+                }
      }
      else {
          if fixedHomerecommenation {
