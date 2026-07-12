@@ -4,10 +4,14 @@
 @version        1.0.0
 @description    A new userstyle
 @author         Me
+@preprocessor   stylus
+@var checkbox collapse "Collapse Sidebar while On Stream"   1
+@var checkbox hiddenstatus "Collapse the hidden status"   0
 ==/UserStyle== */
 
 @-moz-document domain("discord.com") {
     /* Insert code here... */
+if collapse{
     body:has([class*="videoFrame_"]){
         & div[class*="sidebarList_"]
         {
@@ -26,7 +30,8 @@
             position: absolute;
             height: 0px !important;
         }
-    }
+    }}
+    if hiddenstatus{
         section[aria-label="User status and settings"]
         {
             position: absolute;
@@ -36,5 +41,5 @@
         {
 
             height: 150px;
-        } 
+ }       } 
 }
