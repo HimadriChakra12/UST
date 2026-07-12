@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name       claude.ai
+@version    20260226.08.00
+@namespace  ?
+==/UserStyle== */
+
+@-moz-document domain("claude.ai") {
+.max-w-3xl {
+	max-width: 100vw;
+}
+
+nav.z-sidebar.h-screen.max-md\:pointer-events-none.max-md\:fixed {
+	width: 4rem;
+}
+
+a[href="/downloads"]{
+	display: none;
+}
+}
