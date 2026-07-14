@@ -1,0 +1,179 @@
+/* ==UserStyle==
+@name           Github Text
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+@-moz-document url-prefix("https://github.com") {
+    :root{
+        --inactive: #697079;
+        --active: #d1d7e0;
+        --bg: #212830;
+    }
+    header[class*="GlobalNav"]
+    {
+        &:before
+        {
+            content: 'Header';
+            position: relative;
+            width: 48px;
+            top: -13px;
+            left: 5px;
+            background: var(--bg) !important;
+            padding: 0 8px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--inactive);
+            z-index: 100000;
+        }
+        &{
+            margin-top: 12px;
+            border: 3px solid var(--inactive);
+            border-radius: 0px;
+            background: var(--bg);
+        }
+        &:hover{
+            border: 3px solid var(--active);
+            transition: color 0.2s ease;
+            &:before
+            {
+                color: var(--active);
+                transition: color 0.2s ease;
+            }
+        }
+    }
+    div[data-target="react-partial.reactRoot"]:has(header), [class="application-main "] { margin: 9px; }
+}
+@-moz-document regexp("^https?:\\/\\/github\\.com\\/[^\\/]+\\/[^\\/]+\\/?$") {
+    /* Insert code here... */
+    *{border-radius: 0px !important;}
+    header *{
+        border: 0 !important;
+    }
+    header > *
+    {
+        &{
+            background: var(--bg);
+            border: 0 !important;
+            height: 50px;
+        }
+    }
+    span[data-component="counter"] > span
+    {
+        background: #0000 !important;
+    }
+    header > nav svg[class*="octicon"]
+    {
+        display: none
+    }
+    div[data-target="react-partial.reactRoot"]:has(header), [class="application-main "] { margin: 9px; }
+    [id="js-repo-pjax-container"]
+    {
+        &:before
+        {
+            content: 'Code';
+            position: relative;
+            top: -14px;
+            left: 5px;
+            width: 34px;
+            background: var(--bg) !important;
+            padding: 0 8px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--inactive);
+            z-index: 100000;
+        }
+        &{
+            border: 3px solid var(--inactive);
+            border-radius: 0px;
+            padding: 5px;
+            background: var(--bg);
+        }
+        &:hover{
+            border: 3px solid var(--active);
+            transition: color 0.2s ease;
+            &:before
+            {
+                color: var(--active);
+                transition: color 0.2s ease;
+            }
+        }
+    }
+}
+@-moz-document regexp("https://github.com/notifications") {
+    [id="js-repo-pjax-container"]
+    {
+        &:before
+        {
+            content: 'Notification';
+            position: relative;
+            top: -14px;
+            left: 5px;
+            width: 95px;
+            background: var(--bg) !important;
+            padding: 0 8px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--inactive);
+            z-index: 100000;
+        }
+        &{
+            border: 3px solid var(--inactive);
+            border-radius: 0px;
+            padding: 5px;
+            background: var(--bg);
+        }
+        &:hover{
+            border: 3px solid var(--active);
+            transition: color 0.2s ease;
+            &:before
+            {
+                color: var(--active);
+                transition: color 0.2s ease;
+            }
+        }
+    }
+}
+
+@-moz-document url-prefix("https://github.com/HimadriChakra12/UST/issues") {
+    [aria-label="Pages"],
+    [aria-label="Feedback"],
+    [aria-label="Issue filters"]
+    {
+        &:before
+        {
+            position: relative;
+            top: -14px;
+            left: 5px;
+            width: 95px;
+            background: var(--bg) !important;
+            padding: 0 8px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--inactive);
+            z-index: 100000;
+        }
+        &{
+            border: 3px solid var(--inactive);
+            border-radius: 0px;
+            background: var(--bg);
+            padding-bottom: 10px;
+        }
+        &:hover{
+            border: 3px solid var(--active);
+            transition: color 0.2s ease;
+            &:before
+            {
+                color: var(--active);
+                transition: color 0.2s ease;
+            }
+        }
+    }
+    
+    [class="prc-ActionList-ActionList-rPFF2 CollapsibleSidebar-module__toggleList__Li23B"]{display: none}
+    hr{opacity: 0;}
+    [aria-label="Feedback"]:before { content: 'Feedback'; } 
+    [aria-label="Issue filters"]:before { content: 'Issue'; } 
+    [aria-label="Pages"]:before { content: 'Pages'; } 
+}
