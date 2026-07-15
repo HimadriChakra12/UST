@@ -172,7 +172,7 @@ div[id="google-one-tap-anchor"]{
 }
 
 @-moz-document regexp("^https:\\/\\/(?:www\\.)?discord\\.com(?:\\/.*)?$") {
-    [class="pictureInPicture__6341f"]{
+    [class="pictureInPicture__6341f"]:has([class="media-engine-video media__948a4"]){
         display: none
     }
 }
