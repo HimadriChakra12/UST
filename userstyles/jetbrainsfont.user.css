@@ -39,6 +39,9 @@
     [class="html-span xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x1hl2dhg x16tdsg8 x1vvkbs x15yrdiy x579bpy"]{
         font-size: 25px !important;
     }
+    div[role="none"] span[class="xu54ipa xb7ehew xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x126k92a"]{
+        font-size: 45px !important;
+    }
 }
 @-moz-document url-prefix("moz-extension://"),
     url-prefix("chrome-extension://") {
@@ -54,5 +57,4 @@
             font-family: var(--font-anthropicons, Anthropicons-Variable) !important;
     }
 }
-
 
