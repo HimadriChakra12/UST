@@ -701,7 +701,7 @@ gray    #928374
             color: var(--text) !important
         }
             
-        .x5slmwz{ background: var(--authertxtbg) !important;}
+        .x5slmwz:not([data-visualcompletion="ignore"]){ background: var(--authertxtbg) !important;}
         div[class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x1gslohp x14z9mp x12nagc x1lziwak x1yc453h x126k92a xyk4ms5"], div[class="x1f6kntn x1btupbp x1mzt3pk x14ctfv"]{ color: var(--autext) !important }
 
         div[class*="notranslate"],  div[class="x1qjc9v5 x9f619 x78zum5 xdl72j9 xdt5ytf x2lah0s x2lwn1j xeuugli x1n2onr6 x1ja2u2z xu06os2 x1ok221b"] > *, 
