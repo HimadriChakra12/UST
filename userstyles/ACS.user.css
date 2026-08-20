@@ -1,0 +1,104 @@
+/* ==UserStyle==
+@name           ACS
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("engineering.aparsclassroom.com") ,
+	domain("admission.aparsclassroom.com") {
+    /* Insert code here... */
+	*
+	{
+		animation: none  !important;
+		transition: none !important;
+	}
+	
+	:root{
+		--spider-text: #d8d8d8;
+		--spider-btn-bg: #fff;
+		--spider-btn-text: #000;
+		--color-red-600: #fff;
+	}
+	
+	
+	[class="flex flex-wrap justify-center gap-3 mb-8 p-1"] > button,
+	[class="flex flex-wrap justify-center gap-3 mb-6 p-1"] > button 
+	{
+		color: #000;
+	}
+	
+	button[class*="bg-[#540607] border-[#fca1a1]"],
+	button[class*="bg-#062049] border-[#a89e9e]"]
+	{
+		color: #fff;
+		border: 0;
+	}
+	
+	[class="flex items-center justify-center w-full h-[100vh] text-blue-500 dark:text-blue-500 dark:bg-gray-950"],
+	nav,
+	main
+	{
+		background: black;
+		border: 0;
+	}
+	
+	nav,
+	.px-4,
+	.py-3
+	{
+		padding-inline: 0px !important;
+	}
+	
+	@layer utilities {
+		.justify-between {
+			justify-content: space-around;
+		}
+	}
+	
+	[class="container mx-auto mt-20 md:mt-28 p-1"],
+	.p-1
+	{
+		padding: 0px !important;
+		margin-top: 70px !important;
+	}
+	
+	@layer utilities {
+		.text-\[\#f71717\],
+		.text-\[rgb\(24\,119\,242\)\] {
+			color: var(--spider-text);
+		}
+	}
+
+	button
+	{
+		color: var(--spider-text)
+	}
+	
+	[class="rfm-marquee-container "] span,
+	h1, h3, h2, h4
+	{
+		color: #fff !important;
+	}
+	
+	div[class="container mx-auto p-4"],
+	div[class="container mx-auto"] > h2
+	{
+		display: none;
+	}
+	
+	li:has([href="/student/dashboard"]),
+	li:has([href="https://www.facebook.com/groups/acs.eng26"]),
+	li:has([href="https://www.youtube.com/c/aparsclassroom"]),
+	li:has([href="https://exam.aparsclassroom.com"]),
+	[class="jsx-fd9606ccf5a9845d"],
+	[class="mb-10 md:mb-20 container mx-auto"],
+	[class="p-2"],
+	a:has([src="/_next/image?url=%2Flogo.png&w=384&q=75"]),
+	[class="w-full mx-auto max-w-7xl mt-3 md:mt-5 relative"]:has([class="carousel-root"]),
+	footer
+	{
+		display:none
+	}
+}
