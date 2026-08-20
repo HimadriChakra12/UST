@@ -106,9 +106,9 @@ div[id="google-one-tap-anchor"]{
 }
 
 @-moz-document url-prefix("https://open.spotify.com"){
-    div[class="LUXUp8VNfbIoaJCl"]{ background-color: var(--bg); background-position-x: center; }
+    div[class="yLg7GI3umuhVYx7GBNWt"]{ background-color: var(--bg); background-position-x: center; }
     div[class="VeKY4oPJjQ85fRnN"],
-    div[class="Emh6sVCoQHM3KQ4_ WrEaGRqx9J44u32H"]{
+    div[class="WDUGUzfqySzWZXbHg0mP h_Kt0kGg21hYEOfRHXNO"]{
         background-image: var(--bgimg);
         background-attachment: local;
         background-size: var(--size);
@@ -122,9 +122,9 @@ div[id="google-one-tap-anchor"]{
         --background-highlight  : var(--highlight);
         --background-press      : var(--press)
     }
-    div[class="XToncn4_mYHzhKy7 q8mQFn7r8UYsKdHE _H2ZzS_Atuwx6wh9 tMFkXbMSXNUegQIu EYdwwRebZIgjbKy_ aIU4qABgiIgjAEyD NEK7GtRu3w0JbyBT YDy_mwD8Z1sCem4Q zoKSw5SN9xUA4OkM C3zqtOMpn6kyeSzu"]{
-        height      : 30vh !important;
-        max-height  : 30vh !important;
+    div[class="qHMC92m8m3PMCHFBCfrC jhHgzVPKuWbfL02G8MAz XYezLuZkSdx3d68Kpqnw e1yMgLmxzfIZB_TWkdb0 uS6oQ4W73cEk83XtUc4Z MkukAcyzkx2AppTChuiq EzT2R8fsinsYdA6beFW9 VU5ZQbfeO88Oa6y_bw7I sjOhtfkMWJucO1Xr7LPm m5yJJcJLSyRTcMWNcDex"]{
+        height      : 35vh !important;
+        max-height  : 35vh !important;
     }
     
     .encore-dark-theme, .encore-dark-theme .encore-base-set {
