@@ -151,13 +151,6 @@
         background: var(--text);
     }
 
-    body:has([data-testid="upgrade-button"])
-    button[aria-label*="Enable Smart Shuffle"]
-    {
-        opacity: .60;
-        filter: grayscale(1);
-        pointer-events: none
-    }
 
     .GenericModal__overlay,
     [data-testid="upgrade-button"],
@@ -169,6 +162,8 @@
     [aria-label^="Spotify original"],
     [aria-label="State of music today"],
     [aria-label="Trending songs"],
+	[data-testid="friend-activity-button"],
+	[href="/download"],
     [aria-label="Recommended radio"] + * {
 
         display: none;
