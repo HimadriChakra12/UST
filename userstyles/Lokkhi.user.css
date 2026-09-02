@@ -29,6 +29,22 @@ div[id="google-one-tap-anchor"]{
     }
 }
 
+@-moz-document url(https://www.last.fm/user/Himadri2007){
+	div[class*="header-background"]
+	{
+        --bg : url(https://i.vgy.me/kSSQ0R.jpg);
+        --position : 70%;
+        --size : 110%;
+        --color: rgba(206, 45, 45, .43);
+		background-image: var(--bg) !important;
+		background-position-y: var(--position) !important;
+		background-size: var(--size) !important;
+        background-blend-mode: color !important;
+        background-color: var(--color) !important;
+        background-attachment: local;
+	}
+}
+
 @-moz-document url-prefix(https://open.spotify.com) {
     
     .kinda{display: flex}
@@ -199,12 +215,6 @@ div[id="google-one-tap-anchor"]{
     }
 }
 
-@-moz-document url-prefix("https://www.facebook.com"){
-    div[class="x9f619 x1n2onr6 x1ja2u2z"] > div[class="x78zum5 xdt5ytf xg6iff7 xippug5 x1n2onr6"],
-    div[class="x1cy8zhl x9f619 x78zum5 xl56j7k x2lwn1j xeuugli x47corl x1x97wu9 xbr3nou xmzvs34 xf159sx x1mmp8wh x1r9mfr6"]{
-        display: none
-    }
-}
 
 @-moz-document url-prefix("https://123chill.uk") {
     /* Insert code here... */
