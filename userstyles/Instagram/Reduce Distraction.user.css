@@ -54,328 +54,441 @@
 @var checkbox adpay                 "Remove Ad Payment" 0
 
 ==/UserStyle== */
-@-moz-document domain("www.instagram.com") {
+@-moz-document domain("www.instagram.com")
+{
 
-    if suggestfollow{
-        div[class="x1dr59a3 x13vifvy x7vhb2i x6bx242"] {
-            display: none;
-        }
-    }
-    if unread{
-        span[class="x6s0dn4 x1iwo8zk x1033uif x179ill4 x1b60jn0 x9f619 x3nfvp2 xl56j7k x5slmwz xdk7pt x1xc55vz"]{
-            Background: #d5d5d5
-        }
-    }
+	if suggestfollow
+	{
+		div[class="x1dr59a3 x13vifvy x7vhb2i x6bx242"]
+		{
+			display: none;
+		}
+	}
+	if unread
+	{
+		span[class="x6s0dn4 x1iwo8zk x1033uif x179ill4 x1b60jn0 x9f619 x3nfvp2 xl56j7k x5slmwz xdk7pt x1xc55vz"]
+		{
+			Background: #d5d5d5
+		}
+	}
 
-    if navbar{
-        div[class="x1cy8zhl x9f619 x78zum5 xdt5ytf x1gvbg2u x1qughib"]{
-            width: 70px !important
-        }
-    }
-    if chat{
-        if noinstagramuser{
-            div[class="x1n2onr6 xh8yej3"]:has(span[title="Instagram User"]){
-                display: none;
-            }
-        }
-        if notes{
-            div[data-pagelet="IGDInboxThreadListScrollableAreaPagelet"] > div[class="x1c4vz4f x2lah0s xhjk10j x6ikm8r x10wlt62 xf7dkkf xv54qhq"]{
-                display: none;
-            }
-        }
-        if chataccountNameplate{
-            div[class="x6s0dn4 x1bs97v6 x1q0q8m5 x9f619 xat24cr xh8yej3 x1qhh985 x14z7g9a xzbw6zd x78zum5 x1q0g3np x1qughib xsag5q8 x13jy36j x64bnmy xijc0j3"]{
-                display: none
-            }
-        }
-        if nometaaiunavail{
-            div[role="group"]:has(a[href="/Meta AI"]) div[role="presentation"]:has([class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp xo1l8bm x5n08af x1tu3fi x3x7a5m"]),
-            div[class="x13dflua x19991ni"]:has(a[href="/Meta AI"]):has([class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp xo1l8bm x1roi4f4 x1tu3fi x3x7a5m"]){
-                display: none;
-            }
-        }
-        if nometaai{
-            div[class="x13dflua x19991ni"]:has(a[href="/Meta AI"])
-            {
-                display: none
-            }
-        }
-        if nodp{
-            div[class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xc5r6h4 xqeqjp1 x1phubyo x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xdl72j9 x2lah0s x3ct3a4 x2lwn1j xeuugli xexx8yu xyri2b x18d9i69 x1c1uobl x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x87ps6o x1lku1pv x1a2a7pz x4gyw5p xd3so5o x1l895ks x6nl9eh x1a5l9x9 x7vuprf x1mg3h75 x1lliihq xdj266r x14z9mp xat24cr x1lziwak xg6hnt2 x18wri0h"]{
-            &:hover{
-                    background: #fff;
-                }
-            &:hover span[class="x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft"]{
-                    color: #000;
-                }
-            div[class="x6s0dn4 x78zum5 xdt5ytf xl56j7k"]:has(svg[aria-label="More options"]):after{
-                content: "[]";
-                scale: 70%;
-                color: #fff;
-            }
-        }
-                div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 x16ye13r xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]{
-                    font-size: 5px;
-                }
-            div[class="x9f619 x1n2onr6 x1ja2u2z xdt5ytf x2lah0s x193iq5w xeuugli x78zum5 xbmvrgn"]{
-                display: none;
-            }
-            div[class="html-div xdj266r x14z9mp xat24cr xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x13fj5qh x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]:has(svg[aria-label="Pinned"]):after{
-                content: "p";
-                scale: 80%;
-            }
-            div[class="html-div xdj266r x14z9mp xat24cr xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x6s0dn4 x1oa3qoh x13a6bvl xtqikln x1diwwjn"]:has(svg[aria-label="Muted"]):after{
-                content: "M" !important;
-                scale: 80%;
-            }
-                div[class="x6s0dn4 x78zum5 xdt5ytf xl56j7k"] > div:has(svg[aria-label="More options"]),
-                svg[aria-label="Pinned"],
-                svg[aria-label="Muted"],
-                svg[aria-label="Verified"]{
-                    display: none;
-                }
-                span[class="x6s0dn4 x1iwo8zk x1033uif x179ill4 x1b60jn0 x9f619 x3nfvp2 xl56j7k x5slmwz xdk7pt x1xc55vz"]:after{
-                    content: "U";
-                    scale: 80%;
-                    color: #fff;
-                    font-family: bold;
-                }
-                span[class="x6s0dn4 x1iwo8zk x1033uif x179ill4 x1b60jn0 x9f619 x3nfvp2 xl56j7k x5slmwz xdk7pt x1xc55vz"]{
-                    Background: #0000;
-                }
-                div[class="x9f619 x1ja2u2z xzpqnlu x1hyvwdk x14bfe9o xjm9jq1 x6ikm8r x10wlt62 x10l6tqk x1i1rx1s"]{
-                    display: none !important;
-                }
-            if noupdate{
-                div[class="x1n2onr6 xh8yej3"]  div[class="x9f619 x1ja2u2z x78zum5 x2lah0s x1n2onr6 x1qughib x6s0dn4 xozqiw3 x1q0g3np"]:not([class="x7r02ix x15fl9t6 x1yw9sn2 x1evh3fb x4giqqa xb88tzc xw2csxc x1odjw0f x5fp0pe"]){
-                    height: 20px !important;
-                }
-                div[class="x9f619 x1ja2u2z x78zum5 x2lah0s x1n2onr6 x1qughib x6s0dn4 xozqiw3 x1q0g3np"]:not([class="x7r02ix x15fl9t6 x1yw9sn2 x1evh3fb x4giqqa xb88tzc xw2csxc x1odjw0f x5fp0pe"]){
-                    height: 20px !important;
-                }
-                div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 x16ye13r xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]:not(:has([id="loginForm"])){
-                    display: none
-                }
-            }
-        }
-        if tabs{
-            div[class="xvbhtw8 x6usi7g x18b5jzi x1lun4ml x78zum5 xdt5ytf x1t2pt76 x1n2onr6 x13vifvy x1p0ryx0 x1p5gv8h xoa9owu xcoz2nd xgfcpv x1es02x0 xuphzoz xt5vzds x17quhge x1wggrwl x1u1lrf5"] > div:nth-child(2){
-                display: none;
-            }
-        }
-        if searchbar{
-            div[class="xvbhtw8 x6usi7g x18b5jzi x1lun4ml x78zum5 xdt5ytf x1t2pt76 x1n2onr6 x13vifvy x1p0ryx0 x1p5gv8h xoa9owu xcoz2nd xgfcpv x1es02x0 xuphzoz xt5vzds x17quhge x1wggrwl x1u1lrf5"] > div:nth-child(3){
-                display: none !important;
-            }
-        }
-    }
+	if navbar
+	{
+		div[class="x1cy8zhl x9f619 x78zum5 xdt5ytf x1gvbg2u x1qughib"]
+		{
+			width: 70px !important
+		}
+	}
+	if chat
+	{
+		if noinstagramuser
+		{
+			div[class="x1n2onr6 xh8yej3"]:has(span[title="Instagram User"])
+			{
+				display: none;
+			}
+		}
+		if notes
+		{
+			div[data-pagelet="IGDInboxThreadListScrollableAreaPagelet"] > div[class="x1c4vz4f x2lah0s xhjk10j x6ikm8r x10wlt62 xf7dkkf xv54qhq"]
+			{
+				display: none;
+			}
+		}
+		if chataccountNameplate
+		{
+			div[class="x6s0dn4 x1bs97v6 x1q0q8m5 x9f619 xat24cr xh8yej3 x1qhh985 x14z7g9a xzbw6zd x78zum5 x1q0g3np x1qughib xsag5q8 x13jy36j x64bnmy xijc0j3"]
+			{
+				display: none
+			}
+		}
+		if nometaaiunavail
+		{
+			div[role="group"]:has(a[href="/Meta AI"]) div[role="presentation"]:has([class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp xo1l8bm x5n08af x1tu3fi x3x7a5m"]),
+			div[class="x13dflua x19991ni"]:has(a[href="/Meta AI"]):has([class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp xo1l8bm x1roi4f4 x1tu3fi x3x7a5m"])
+			{
+				display: none;
+			}
+		}
+		if nometaai
+		{
+			div[class="x13dflua x19991ni"]:has([class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb"]),
+			div[class="x13dflua x19991ni"]:has(a[href="/Meta AI"])
+			{
+				display: none
+			}
+		}
+		if nodp
+		{
+			div[class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xc5r6h4 xqeqjp1 x1phubyo x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xdl72j9 x2lah0s x3ct3a4 x2lwn1j xeuugli xexx8yu xyri2b x18d9i69 x1c1uobl x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x87ps6o x1lku1pv x1a2a7pz x4gyw5p xd3so5o x1l895ks x6nl9eh x1a5l9x9 x7vuprf x1mg3h75 x1lliihq xdj266r x14z9mp xat24cr x1lziwak xg6hnt2 x18wri0h"]
+			{
+				&:hover
+				{
+					background: #fff;
+				}
+				&:hover span[class="x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft"]
+				{
+					color: #000;
+				}
+				div[class="x6s0dn4 x78zum5 xdt5ytf xl56j7k"]:has(svg[aria-label="More options"]):after
+				{
+					content: "[]";
+					scale: 70%;
+					color: #fff;
+				}
+			}
+			div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 x16ye13r xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]
+			{
+				font-size: 5px;
+			}
+			div[class="html-div xdj266r x14z9mp xat24cr xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x13fj5qh x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]:has(svg[aria-label="Pinned"]):after
+			{
+				content: "p";
+				scale: 80%;
+			}
+			div[class="html-div xdj266r x14z9mp xat24cr xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x6s0dn4 x1oa3qoh x13a6bvl xtqikln x1diwwjn"]:has(svg[aria-label="Muted"]):after
+			{
+				content: "M" !important;
+				scale: 80%;
+			}
+			span[class="x6s0dn4 x1iwo8zk x1033uif x179ill4 x1b60jn0 x9f619 x3nfvp2 xl56j7k x5slmwz xdk7pt x1xc55vz"]:after
+			{
+				content: "U";
+				scale: 80%;
+				color: #fff;
+				font-family: bold;
+			}
+			span[class="x6s0dn4 x1iwo8zk x1033uif x179ill4 x1b60jn0 x9f619 x3nfvp2 xl56j7k x5slmwz xdk7pt x1xc55vz"]
+			{
+				Background: #0000;
+			}
+			div[class="x9f619 x1n2onr6 x1ja2u2z xdt5ytf x2lah0s x193iq5w xeuugli x78zum5 xbmvrgn"]
+			div[class="x9f619 x1ja2u2z xzpqnlu x1hyvwdk x14bfe9o xjm9jq1 x6ikm8r x10wlt62 x10l6tqk x1i1rx1s"]
+			div[class="x6s0dn4 x78zum5 xdt5ytf xl56j7k"] > div:has(svg[aria-label="More options"]),
+			svg[aria-label="Pinned"],
+			svg[aria-label="Muted"],
+			svg[aria-label="Verified"]
+			{
+				display: none;
+			}
+			if noupdate
+			{
+				div[class="x1n2onr6 xh8yej3"] div[class="x9f619 x1ja2u2z x78zum5 x2lah0s x1n2onr6 x1qughib x6s0dn4 xozqiw3 x1q0g3np"]:not([class="x7r02ix x15fl9t6 x1yw9sn2 x1evh3fb x4giqqa xb88tzc xw2csxc x1odjw0f x5fp0pe"])
+				{
+					height: 20px !important;
+				}
+				div[class="x9f619 x1ja2u2z x78zum5 x2lah0s x1n2onr6 x1qughib x6s0dn4 xozqiw3 x1q0g3np"]:not([class="x7r02ix x15fl9t6 x1yw9sn2 x1evh3fb x4giqqa xb88tzc xw2csxc x1odjw0f x5fp0pe"])
+				{
+					height: 20px !important;
+				}
+				div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"] > div[data-visualcompletion="ignore"]:has([dir="auto"])
+				{
+					display: none
+				}
+			}
+		}
+		if tabs
+		{
+			div[class="xvbhtw8 x6usi7g x18b5jzi x1lun4ml x78zum5 xdt5ytf x1t2pt76 x1n2onr6 x13vifvy x1p0ryx0 x1p5gv8h xoa9owu xcoz2nd xgfcpv x1es02x0 xuphzoz xt5vzds x17quhge x1wggrwl x1u1lrf5"] > div:nth-child(2)
+			{
+				display: none;
+			}
+		}
+		if searchbar
+		{
+			div[class="xvbhtw8 x6usi7g x18b5jzi x1lun4ml x78zum5 xdt5ytf x1t2pt76 x1n2onr6 x13vifvy x1p0ryx0 x1p5gv8h xoa9owu xcoz2nd xgfcpv x1es02x0 xuphzoz xt5vzds x17quhge x1wggrwl x1u1lrf5"] > div:nth-child(3)
+			{
+				display: none !important;
+			}
+		}
+	}
 
-    if posts {
-        if comments {
-            ._a9za._a9z6 > div.x1nhvcw1.x1oa3qoh.x1qjc9v5.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x1uhb9sk.xbiv7yw.x16uus16.x1ga7v0g.x15mokao.x78zum5.xjbqb8w.x9f619 > .x1nhvcw1.x1oa3qoh.x1qjc9v5.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x1uhb9sk.xbiv7yw.x16uus16.x1ga7v0g.x15mokao.x78zum5.xjbqb8w.x9f619 > .x1nhvcw1.x1oa3qoh.x1qjc9v5.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x1uhb9sk.xbiv7yw.x16uus16.x1ga7v0g.x15mokao.x78zum5.xjbqb8w.x9f619,
-            .xh8yej3.x10l6tqk.xf7dkkf.x1l90r2v.xv54qhq.xexx8yu.x5yr21d.xdt5ytf.x78zum5.x9f619 > .x1iyjqo2.xdt5ytf.x78zum5 {
-                display: none !important;
-            }
-        }
+	if posts
+	{
+		if comments
+		{
+			._a9za._a9z6 > div.x1nhvcw1.x1oa3qoh.x1qjc9v5.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x1uhb9sk.xbiv7yw.x16uus16.x1ga7v0g.x15mokao.x78zum5.xjbqb8w.x9f619 > .x1nhvcw1.x1oa3qoh.x1qjc9v5.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x1uhb9sk.xbiv7yw.x16uus16.x1ga7v0g.x15mokao.x78zum5.xjbqb8w.x9f619 > .x1nhvcw1.x1oa3qoh.x1qjc9v5.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x1uhb9sk.xbiv7yw.x16uus16.x1ga7v0g.x15mokao.x78zum5.xjbqb8w.x9f619,
+			.xh8yej3.x10l6tqk.xf7dkkf.x1l90r2v.xv54qhq.xexx8yu.x5yr21d.xdt5ytf.x78zum5.x9f619 > .x1iyjqo2.xdt5ytf.x78zum5
+			{
+				display: none !important;
+			}
+		}
 
-        if suggestPosts {
-            .x11njtxf.x1n2onr6.x24vp2c.x1c1uobl.x18d9i69.xyri2b.x1lziwak.xat24cr.x14z9mp.xdj266r.xk390pu.xln7xf2.x2lah0s.xdt5ytf.x1lliihq.x9f619.x14e42zd.x1qhh985.x10w94by.x972fbf.x1qjc9v5 {
-                display: none !important;
-            }
-        }
-        if supportsection{
-            div[class="x6s0dn4 x78zum5"]{
-                display: none;
-            }
-        }
-        else {
-            if like{
-                div[class="x6s0dn4 x78zum5"] span[class="x1qfufaz"]:has([aria-label="Like"]),
-                div[class="x6s0dn4 x78zum5"] span:nth-child(2){
-                    display: none;
-                }
-            }
-            if comment{
-                div[class="x6s0dn4 x78zum5"] span:has([aria-label="Comment"]),
-                div[class="x6s0dn4 x78zum5"] span:nth-child(4){
-                    display: none;
-                }
-            }
-            if share{
-                div[class="x6s0dn4 x78zum5"] div:has([aria-label="Share"]){
-                    display: none;
-                }
-            }
-        }
-    }
-    else {
-            div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh x1nhvcw1"]{
-                display: none !important
-            }
-        }
-    div[class="xw7yly9"]{
-        align-content: center;    
-    }
-    div[class="x1uvtmcs x4k7w5x x1h91t0o x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1n2onr6 x1qrby5j x1jfb8zj"]{
-        border: 0
-    }
-    div[class="x1qjc9v5 x78zum5 x1q0g3np xl56j7k xh8yej3"] > div{
-        max-width: 50% !important;
-    }
+		if suggestPosts
+		{
+			.x11njtxf.x1n2onr6.x24vp2c.x1c1uobl.x18d9i69.xyri2b.x1lziwak.xat24cr.x14z9mp.xdj266r.xk390pu.xln7xf2.x2lah0s.xdt5ytf.x1lliihq.x9f619.x14e42zd.x1qhh985.x10w94by.x972fbf.x1qjc9v5
+			{
+				display: none !important;
+			}
+		}
+		if supportsection
+		{
+			div[class="x6s0dn4 x78zum5"]
+			{
+				display: none;
+			}
+		}
+		else
+		{
+			if like
+			{
+				div[class="x6s0dn4 x78zum5"] span[class="x1qfufaz"]:has([aria-label="Like"]),
+				div[class="x6s0dn4 x78zum5"] span:nth-child(2)
+				{
+					display: none;
+				}
+			}
+			if comment
+			{
+				div[class="x6s0dn4 x78zum5"] span:has([aria-label="Comment"]),
+				div[class="x6s0dn4 x78zum5"] span:nth-child(4)
+				{
+					display: none;
+				}
+			}
+			if share
+			{
+				div[class="x6s0dn4 x78zum5"] div:has([aria-label="Share"])
+				{
+					display: none;
+				}
+			}
+		}
+	}
+	else
+	{
+		div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh x1nhvcw1"]
+		{
+			display: none !important
+		}
+	}
+	div[class="xw7yly9"]
+	{
+		align-content: center;
+	}
+	div[class="x1uvtmcs x4k7w5x x1h91t0o x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1n2onr6 x1qrby5j x1jfb8zj"]
+	{
+		border: 0
+	}
+	div[class="x1qjc9v5 x78zum5 x1q0g3np xl56j7k xh8yej3"] > div
+	{
+		max-width: 50% !important;
+	}
 
-    if sidebar {
-        if search {
-            .xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x1hl2dhg.x16tdsg8.x1vvkbs.x4k7w5x.x1h91t0o.x1h9r5lt.x1jfb8zj.xv2umb2.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1qrby5j:has(.x1lliihq.x1n2onr6.x5n08af[aria-label="Search"]) {
-                display: none !important;
-            }
-        }
+	if sidebar
+	{
+		if search
+		{
+			.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x1hl2dhg.x16tdsg8.x1vvkbs.x4k7w5x.x1h91t0o.x1h9r5lt.x1jfb8zj.xv2umb2.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1qrby5j:has(.x1lliihq.x1n2onr6.x5n08af[aria-label="Search"])
+			{
+				display: none !important;
+			}
+		}
 
-        if reels {
-            .xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x1hl2dhg.x16tdsg8.x1vvkbs.x4k7w5x.x1h91t0o.x1h9r5lt.x1jfb8zj.xv2umb2.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1qrby5j:has(.x1lliihq.x1n2onr6.x5n08af[aria-label="Reels"]),
-            div.xl56j7k.xh8yej3.xgv127d.x1bhewko.xsfy40s.x1mfogq2.xg7h5cd.x78zum5.x9f619.x1qjc9v5 {
-                display: none !important;
-            }
-        }
+		if reels
+		{
+			.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x1hl2dhg.x16tdsg8.x1vvkbs.x4k7w5x.x1h91t0o.x1h9r5lt.x1jfb8zj.xv2umb2.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1qrby5j:has(.x1lliihq.x1n2onr6.x5n08af[aria-label="Reels"]),
+			div.xl56j7k.xh8yej3.xgv127d.x1bhewko.xsfy40s.x1mfogq2.xg7h5cd.x78zum5.x9f619.x1qjc9v5
+			{
+				display: none !important;
+			}
+		}
 
-        if messages {
-        a[aria-label^="Direct messaging -"],
-            .xlnp5zw.xmz0i5r.x5yr21d.x1iyjqo2.xnz67gz > .x1nhvcw1.x1oa3qoh.x1qjc9v5.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x1n2onr6.xbiv7yw.x16uus16.x1ga7v0g.x15mokao.x78zum5.xjbqb8w.x9f619,
-            .xixxii4.x145d82y.x3h4tne.x1nhvcw1.x1oa3qoh.x1qjc9v5.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.xbiv7yw.x16uus16.x1ga7v0g.x15mokao.x78zum5.xjbqb8w.x9f619 {
-                display: none !important;
-            }
-        }
+		if messages
+		{
+			a[aria-label^="Direct messaging -"],
+			.xlnp5zw.xmz0i5r.x5yr21d.x1iyjqo2.xnz67gz > .x1nhvcw1.x1oa3qoh.x1qjc9v5.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x1n2onr6.xbiv7yw.x16uus16.x1ga7v0g.x15mokao.x78zum5.xjbqb8w.x9f619,
+			.xixxii4.x145d82y.x3h4tne.x1nhvcw1.x1oa3qoh.x1qjc9v5.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.xbiv7yw.x16uus16.x1ga7v0g.x15mokao.x78zum5.xjbqb8w.x9f619
+			{
+				display: none !important;
+			}
+		}
 
-        if notifs {
-            .xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x1hl2dhg.x16tdsg8.x1vvkbs.x4k7w5x.x1h91t0o.x1h9r5lt.x1jfb8zj.xv2umb2.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1qrby5j:has(.x1lliihq.x1n2onr6.x5n08af[aria-label="Notifications"]) {
-                display: none !important;
-            }
-        }
+		if notifs
+		{
+			.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x1hl2dhg.x16tdsg8.x1vvkbs.x4k7w5x.x1h91t0o.x1h9r5lt.x1jfb8zj.xv2umb2.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1qrby5j:has(.x1lliihq.x1n2onr6.x5n08af[aria-label="Notifications"])
+			{
+				display: none !important;
+			}
+		}
 
-        if create {
-            .xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x1hl2dhg.x16tdsg8.x1vvkbs.x4k7w5x.x1h91t0o.x1h9r5lt.x1jfb8zj.xv2umb2.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1qrby5j:has(.x1lliihq.x1n2onr6.x5n08af[aria-label="New post"]) {
-                display: none !important;
-            }
-        }
+		if create
+		{
+			.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x1hl2dhg.x16tdsg8.x1vvkbs.x4k7w5x.x1h91t0o.x1h9r5lt.x1jfb8zj.xv2umb2.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1qrby5j:has(.x1lliihq.x1n2onr6.x5n08af[aria-label="New post"])
+			{
+				display: none !important;
+			}
+		}
 
-        if dashboard {
-            .xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x1hl2dhg.x16tdsg8.x1vvkbs.x4k7w5x.x1h91t0o.x1h9r5lt.x1jfb8zj.xv2umb2.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1qrby5j:has(.x1lliihq.x1n2onr6.x5n08af[aria-label="Professional dashboard"]) {
-                display: none;
-            }
-        }
-        if profile{
-            div[class="x1n2onr6"]:has([aria-describedby="_r_1b9_"]){
-                display: none
-            }
-        }
+		if dashboard
+		{
+			.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x1hl2dhg.x16tdsg8.x1vvkbs.x4k7w5x.x1h91t0o.x1h9r5lt.x1jfb8zj.xv2umb2.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1qrby5j:has(.x1lliihq.x1n2onr6.x5n08af[aria-label="Professional dashboard"])
+			{
+				display: none;
+			}
+		}
+		if profile
+		{
+			div[class="x1n2onr6"]:has([aria-describedby="_r_1b9_"])
+			{
+				display: none
+			}
+		}
 
-        if fromMeta {
-            div[class="xl5mz7h xhuyl8g"]:has(span.x1qrby5j.x7ja8zs.x1t2pt76.x1lytzrv.xedcshv.xarpa2k.x3igimt.x12ejxvf.xaigb6o.x1beo9mf.xv2umb2.x1jfb8zj.x1h9r5lt.x1h91t0o.x4k7w5x.x1vvkbs.x16tdsg8.x1hl2dhg.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-span:nth-of-type(2)) {
-                display: none !important;
-            }
-        }
-        else{
-            if meta{
-                span[class="html-span xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x1hl2dhg x16tdsg8 x1vvkbs x4k7w5x x1h91t0o x1h9r5lt x1jfb8zj xv2umb2 x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1qrby5j"]:has(svg[aria-label="Also from Meta"]){
-                    display: none;
-                }
-            }
-            if settings{
-                div[class="x9f619 x3nfvp2 x1obq294 x5a5i1n xde0f50 x15x8krk xr9ek0c xjpr12u xo237n4 x6pnmvc x7nr27j x12dmmrz xz9dl7a xpdmqnj xsag5q8 x1g0dm76 x80pfx3 x159b3zp"]:has(line){
-                    display: none   
-                }
-            }
-        }
-    }
-    else {
-        .x1n327nk.xeq5yr9.x1dr59a3.x1nhvcw1.x1oa3qoh.x1qjc9v5.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x13vifvy.xixxii4.xbiv7yw.x16uus16.x1ga7v0g.x15mokao.x78zum5.xjbqb8w.x9f619,
-        .xvbhtw8.xf7dkkf.xv54qhq.x11njtxf.x1n2onr6.x18d9i69.xexx8yu.x1h3rv7z.x1lziwak.xat24cr.x14z9mp.xdj266r.xk390pu.x2lah0s.xdt5ytf.x78zum5.x9f619.x1qjc9v5 {
-            display: none !important;
-        }
+		if fromMeta
+		{
+			div[class="xl5mz7h xhuyl8g"]:has(span.x1qrby5j.x7ja8zs.x1t2pt76.x1lytzrv.xedcshv.xarpa2k.x3igimt.x12ejxvf.xaigb6o.x1beo9mf.xv2umb2.x1jfb8zj.x1h9r5lt.x1h91t0o.x4k7w5x.x1vvkbs.x16tdsg8.x1hl2dhg.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-span: nth-of-type(2))
+			{
+				display: none !important;
+			}
+		}
+		else
+		{
+			if meta
+			{
+				span[class="html-span xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x1hl2dhg x16tdsg8 x1vvkbs x4k7w5x x1h91t0o x1h9r5lt x1jfb8zj xv2umb2 x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1qrby5j"]:has(svg[aria-label="Also from Meta"])
+				{
+					display: none;
+				}
+			}
+			if settings
+			{
+				div[class="x9f619 x3nfvp2 x1obq294 x5a5i1n xde0f50 x15x8krk xr9ek0c xjpr12u xo237n4 x6pnmvc x7nr27j x12dmmrz xz9dl7a xpdmqnj xsag5q8 x1g0dm76 x80pfx3 x159b3zp"]:has(line)
+				{
+					display: none
+				}
+			}
+		}
+	}
+	else
+	{
+		.x1n327nk.xeq5yr9.x1dr59a3.x1nhvcw1.x1oa3qoh.x1qjc9v5.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x13vifvy.xixxii4.xbiv7yw.x16uus16.x1ga7v0g.x15mokao.x78zum5.xjbqb8w.x9f619,
+		.xvbhtw8.xf7dkkf.xv54qhq.x11njtxf.x1n2onr6.x18d9i69.xexx8yu.x1h3rv7z.x1lziwak.xat24cr.x14z9mp.xdj266r.xk390pu.x2lah0s.xdt5ytf.x78zum5.x9f619.x1qjc9v5
+		{
+			display: none !important;
+		}
 
-        .x1v4esvl.x1v4esvl,
-        .x6osk4m.x6osk4m {
-            max-width: 100% !important;
-            width: 100% !important;
-        }
-    }
-
+		.x1v4esvl.x1v4esvl,
+		.x6osk4m.x6osk4m
+		{
+			max-width: 100% !important;
+			width: 100% !important;
+		}
+	}
 }
-@-moz-document regexp("^https?://(www\\.)?instagram\\.com/direct/t/[^/]+/?$") {
-    if hidechatreels{
-        div[role="none"]:has(svg[aria-label="Clip"]):not(div[role="group"]:has([aria-label^="Open the profile page"]))
-        {
-            display: none;
-        }
-    }
-    if hidechatposts{
-        div[role="none"]:has(a[class*="_a6hd"]){
-            display:none;
-        }
-    }
-    if noshorts{
-        div[role="none"]:has(a[href*="https://youtube.com/shorts/"]){
-            display: none;
-        }
-    }
-    if pinbanner{
-        div[class*="x1kmbdvd"]:has([aria-label*="Pinned"]){
-            display: none;
-        }
-    }
-
+@-moz-document regexp("^https?://(www\\.)?instagram\\.com/direct/t/[^/]+/?$")
+{
+	if hidechatreels
+	{
+		div[role="none"]:has(svg[aria-label="Clip"]):not(div[role="group"]: has([aria-label^="Open the profile page"]))
+		{
+			display: none;
+		}
+	}
+	if hidechatposts
+	{
+		div[role="none"]:has(a[class*="_a6hd"])
+		{
+			display: none;
+		}
+	}
+	if noshorts
+	{
+		div[role="none"]:has(a[href*="https://youtube.com/shorts/"])
+		{
+			display: none;
+		}
+	}
+	if pinbanner
+	{
+		div[class*="x1kmbdvd"]:has([aria-label*="Pinned"])
+		{
+			display: none;
+		}
+	}
 }
-@-moz-document regexp("^https?://(www\\.)?instagram\\.com/.*$"){
-    div[class="xw7yly9"]{
-        align-content: center;    
-    }
-    div[class="x1uvtmcs x4k7w5x x1h91t0o x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1n2onr6 x1qrby5j x1jfb8zj"]{
-        border: 0
-    }
-    div[class="x1qjc9v5 x78zum5 x1q0g3np xl56j7k xh8yej3"] > div{
-        max-width: 50% !important;
-        min-width: 438px !important;
-    }
-    div[class="_acc8 _abpk"]{
-        display: none
-    }
-    footer{
-        display: none !important;
-    }
-    if posts{
-        div{display: block}
-        } else{
-        div[class="x15mokao x1ga7v0g x16uus16 xbiv7yw x5o85r1 xeo4mu6 x1vz142a x18uqkz4 x1pv78wv xghhx3z"]{
-            display: none;
-
-        }
-    }
+@-moz-document regexp("^https?://(www\\.)?instagram\\.com/.*$")
+{
+	div[class="xw7yly9"]
+	{
+		align-content: center;
+	}
+	div[class="x1uvtmcs x4k7w5x x1h91t0o x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1n2onr6 x1qrby5j x1jfb8zj"]
+	{
+		border: 0
+	}
+	div[class="x1qjc9v5 x78zum5 x1q0g3np xl56j7k xh8yej3"] > div
+	{
+		max-width: 50% !important;
+		min-width: 438px !important;
+	}
+	div[class="_acc8 _abpk"]
+	{
+		display: none
+	}
+	footer
+	{
+		display: none !important;
+	}
+	if posts
+	{
+		div
+		{
+			display: block
+		}
+	}
+	else
+	{
+		div[class="x15mokao x1ga7v0g x16uus16 xbiv7yw x5o85r1 xeo4mu6 x1vz142a x18uqkz4 x1pv78wv xghhx3z"]
+		{
+			display: none;
+		}
+	}
 }
 
-@-moz-document url-prefix("https://www.instagram.com/accounts/edit/") {
-    if accenterdebloat{
-        if forprofessionals{
-            if professionalacc{
-                div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]:has([href="/accounts/professional_account_settings/"]){
-                    display: none}
-                }
-        
-            if professionaltools{
-                div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]:has([href="/accounts/professional_account_tools/"]){
-                    display: none}
-                }
-        
-            if adpay{
-                div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]:has([href="/accounts/ad_payments/"]){
-                    display: none}
-                }
-            } else {
-                div[class="html-div xdj266r xat24cr xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1 x1mkwnke xmsj0wv"]:has([href="/accounts/professional_account_settings/"]){
-                        display: none;
-                    }
-            }
-        } else {
-                div[class="html-div xdj266r xat24cr xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1 x1mkwnke xmsj0wv"]:has([href="/accounts/professional_account_settings/"]){
-                        display: none;
-                    }
-        }
+@-moz-document url-prefix("https://www.instagram.com/accounts/edit/")
+{
+	if accenterdebloat
+	{
+		if forprofessionals
+		{
+			if professionalacc
+			{
+				div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]:has([href="/accounts/professional_account_settings/"])
+				{
+					display: none
+				}
+			}
+
+			if professionaltools
+			{
+				div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]:has([href="/accounts/professional_account_tools/"])
+				{
+					display: none
+				}
+			}
+
+			if adpay
+			{
+				div[class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]:has([href="/accounts/ad_payments/"])
+				{
+					display: none
+				}
+			}
+		}
+		else
+		{
+			div[class="html-div xdj266r xat24cr xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1 x1mkwnke xmsj0wv"]:has([href="/accounts/professional_account_settings/"])
+			{
+				display: none;
+			}
+		}
+	}
+	else
+	{
+		div[class="html-div xdj266r xat24cr xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1 x1mkwnke xmsj0wv"]:has([href="/accounts/professional_account_settings/"])
+		{
+			display: none;
+		}
+	}
 }
